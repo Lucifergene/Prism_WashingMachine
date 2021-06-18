@@ -1,0 +1,31 @@
+.bi-search{
+  margin-right: 50px !important;
+}
+.form-select{
+  margin-top: 250px;
+  margin-left: 120px;
+  width: 25% !important;
+
+}
+.btn-outline-success{
+  margin-top: 10px !important;
+  margin-left: 120px !important;
+}
+body{
+  background-image: url("../images/homepage.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%  ;
+}
+.nav-link{
+  font-family: acumin-pro,sans-serif;
+  margin-left: 30px;
+  font-size: 25px;
+  color:#91B49C !important;
+}
+body{
+  
+}
+.form-select{
+  color: #91B49C !important;
+}
