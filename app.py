@@ -1,7 +1,7 @@
 import datetime
 import csv
 
-from flask import Flask, redirect, url_for, request, render_template, redirect
+from flask import Flask, redirect, url_for, request, render_template, redirect, send_file
 from flask_restful import Api, Resource
 from datetime import timedelta
 
@@ -21,7 +21,10 @@ def index():
 def washingMachine():
     return render_template('washingMachine.html')
 
-
+@app.route('/download', methods=['GET'])
+def downloadFile ():
+    path = "nameList.csv"
+    return send_file(path, as_attachment=True)
 class Save_CSV(Resource):
 
     def post(self):
