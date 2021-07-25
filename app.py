@@ -1,9 +1,9 @@
-import datetime
-import csv
+import datetime, os, csv
 
 from flask import Flask, redirect, url_for, request, render_template, redirect, send_file
 from flask_restful import Api, Resource
 from datetime import timedelta
+from gevent.pywsgi import WSGIServer # WSGI Server
 
 
 app = Flask(__name__)
@@ -47,4 +47,7 @@ api.add_resource(Save_CSV, "/save")
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000)) 
+    http_server = WSGIServer(('0.0.0.0', port), app)
+    print(f"Flask Server Started at {str(port)}")
+    http_server.serve_forever()
