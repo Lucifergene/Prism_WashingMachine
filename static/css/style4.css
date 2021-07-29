@@ -11,16 +11,17 @@
   margin-left: 800px !important;
 }
 body {
-  background-image: url("../images/wash bg.png");
+  background-image: url("../images/Microwave@2x.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: auto 100%;
+  background-size: 110%;
+  background-position: bottom left;
 }
 .nav-link {
   font-family: acumin-pro, sans-serif;
   margin-left: 30px;
   font-size: 25px;
-  color: #c28246 !important;
+  color: white !important;
 }
 form {
   padding-top: 180px;
@@ -82,12 +83,12 @@ form {
 
 .o1 {
   display: grid;
-  grid-template-columns: repeat(10, auto);
+  grid-template-columns: repeat(8, auto);
   grid-template-areas:
-    "header header header header header header header  header header header"
-    "main main main main main main main main main main"
-    "main main main main main main main main main main"
-    "footer footer footer footer footer footer footer footer footer footer";
+    "header header header header header header header  header "
+    "main main main main main main main main "
+    "main main main main main main main main "
+    "footer footer footer footer footer footer  footer footer";
   grid-gap: 10px;
 }
 h2 {

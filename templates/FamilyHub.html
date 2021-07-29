@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="../static/css/style1.css">
+  <link rel="stylesheet" href="../static/css/style3.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.typekit.net/uye4wtf.css">
@@ -14,7 +14,7 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-  <title>washing machine page</title>
+  <title>Family Hub page</title>
 </head>
 
 <body>
@@ -74,14 +74,14 @@
       <h2>Broad Catrgory</h2>
       <label>Type:</label>
         <br>
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="TopLaod" checked>
-          <label class="form-check-label" for="TopLaod">Top Load</label>
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="Frontload">
-          <label class="form-check-label" for="Frontload">Front Load</label>
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="SemiAuto">
-          <label class="form-check-label" for="SemiAuto">Semi-Auto</label>
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="Auto">
-          <label class="form-check-label" for="Auto">Auto</label>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="FrenchDoor" checked>
+          <label class="form-check-label" for="FrenchDoor">French door</label>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="SideBySide">
+          <label class="form-check-label" for="SideBySide">Side by side</label>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="SingleDoor">
+          <label class="form-check-label" for="SingleDoor">Single door</label>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="DoubleDoor">
+          <label class="form-check-label" for="DoubleDoor">Double door</label>
       <label>Power Rating:</label>
           <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
               choose
@@ -112,7 +112,7 @@
       <div class="wrap o2">
         <h2>Hardware Properties</h2>
         <label for="model">model</label><input type="text" id="model" placeholder="WW80K54E0WW">
-        <label for="washingCapacity">Washing Capacity(kg)</label><input type="text" id="washingCapacity">
+        <label for="Capacity"> Capacity(ltr)</label><input type="text" id="Capacity">
         <label for="dimWidth">Dimension width(mm)</label><input type="text" id="dimWidth">
         <label for="dimDepth">Dimension Depth(mm)</label><input type="text" id="dimDepth">
         <label for="weight">Weight(kg)</label><input type="text" id="weight">
@@ -122,29 +122,10 @@
               choose
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-            <li><a class="dropdown-item" href="#">Red</a></li>
+            <li><a class="dropdown-item" href="#">Grey</a></li>
             <li><a class="dropdown-item" href="#">Black</a></li>
-            <li><a class="dropdown-item" href="#">White</a></li>
           </ul>
           
-          <label>Door Color:</label>
-          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-              choose
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-            <li><a class="dropdown-item" href="#">Red</a></li>
-            <li><a class="dropdown-item" href="#">Black</a></li>
-            <li><a class="dropdown-item" href="#">White</a></li>
-          </ul>
-          <label>Panel Display:</label>
-          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
-              choose
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
-            <li><a class="dropdown-item" href="#">LCD</a></li>
-            <li><a class="dropdown-item" href="#">LED</a></li>
-            <li><a class="dropdown-item" href="#">NA</a></li>
-          </ul>
           <button type="button" class="btn btn-outline-success" onclick="closeOverlay()">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-arrow-right"
                 viewBox="0 0 16 16">
@@ -158,66 +139,21 @@
     <div id ="overlay3"class="overlay">
     <div class="wrap o3">
       <h2>Software Properties</h2>
-      <label>Bubble Technology:</label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label>Bubble Soak:</label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      
-      <label>Ceremic Heater:</label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label>Child Lock:</label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      
-      
-        <label>Drum Type:</label>
-        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
-            choose
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
-          <li><a class="dropdown-item" href="#">Diamon Drum</a></li>
-        </ul>
-        <label></label><label></label>
-        <label>Motor:</label>
-        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false">
-            choose
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
-          <li><a class="dropdown-item" href="#">DIT</a></li>
-        </ul><label></label><label></label>
-
-        <label for="weight">Spin Speed(RPM)</label><input type="text" id="weight">
-        <label></label><label></label>
-
-
-      <label>Quick Wash:</label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label>Bedding:   </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      
-      <label>Daily Wash:      </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label>Delicates:      </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      
-      <label>Hygiene Steam:      </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label>Spin:      </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      
-      <label>Rinse:       </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label>Super Eco Wash:      </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      
-      <label>Wool:      </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label>Cotton:      </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      
-      <label>Eco Drum Clean:      </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label>Prewash:      </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      
-      <label>Intensive:      </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label>Synthetics:      </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      
+      <label>Family Hub:</label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label>View Inside:</label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+ 
       <label>Error Codes:</label>
-
       <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton7" data-bs-toggle="dropdown" aria-expanded="false">
             choose
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton7">
-          <li><a class="dropdown-item" href="#">CE</a></li>
-          <li><a class="dropdown-item" href="#">FE</a></li>
-          <li><a class="dropdown-item" href="#">DE2</a></li>
-          <li><a class="dropdown-item" href="#">DE1</a></li>
-          <li><a class="dropdown-item" href="#">DE</a></li>
-          <li><a class="dropdown-item" href="#">E8</a></li>
+          <li><a class="dropdown-item" href="#">AP</a></li>
+          <li><a class="dropdown-item" href="#">21E</a></li>
+          <li><a class="dropdown-item" href="#">22E</a></li>
+          <li><a class="dropdown-item" href="#">22C</a></li>
+          <li><a class="dropdown-item" href="#">85C</a></li>
+          <li><a class="dropdown-item" href="#">PC ER</a></li>
+          <li><a class="dropdown-item" href="#">PC CH</a></li>
         </ul>
         <button type="button" class="btn btn-outline-success" onclick="closeOverlay()">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-arrow-right"
@@ -284,9 +220,8 @@
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton10">
         <li><a class="dropdown-item" href="#">Idle</a></li>
-        <li><a class="dropdown-item" href="#">Wash</a></li>
-        <li><a class="dropdown-item" href="#">Spin</a></li>
-        <li><a class="dropdown-item" href="#">Rinse</a></li>
+        <li><a class="dropdown-item" href="#">Frosting</a></li>
+        <li><a class="dropdown-item" href="#">Deep freeze</a></li>
         <li><a class="dropdown-item" href="#">Error</a></li>
       </ul>
 <label></label><label></label>
@@ -297,9 +232,8 @@
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton11">
         <li><a class="dropdown-item" href="#">Idle</a></li>
-        <li><a class="dropdown-item" href="#">Wash</a></li>
-        <li><a class="dropdown-item" href="#">Spin</a></li>
-        <li><a class="dropdown-item" href="#">Rinse</a></li>
+        <li><a class="dropdown-item" href="#">Frosting</a></li>
+        <li><a class="dropdown-item" href="#">Deep freeze</a></li>
         <li><a class="dropdown-item" href="#">Error</a></li>
       </ul>
 
@@ -310,12 +244,13 @@
           choose
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton12">
-        <li><a class="dropdown-item" href="#">CE</a></li>
-          <li><a class="dropdown-item" href="#">FE</a></li>
-          <li><a class="dropdown-item" href="#">DE2</a></li>
-          <li><a class="dropdown-item" href="#">DE1</a></li>
-          <li><a class="dropdown-item" href="#">DE</a></li>
-          <li><a class="dropdown-item" href="#">E8</a></li>
+        <li><a class="dropdown-item" href="#">AP</a></li>
+        <li><a class="dropdown-item" href="#">21E</a></li>
+        <li><a class="dropdown-item" href="#">22E</a></li>
+        <li><a class="dropdown-item" href="#">22C</a></li>
+        <li><a class="dropdown-item" href="#">85C</a></li>
+        <li><a class="dropdown-item" href="#">PC ER</a></li>
+        <li><a class="dropdown-item" href="#">PC CH</a></li>
       </ul>
 
 <label></label><label></label>

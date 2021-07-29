@@ -11,16 +11,16 @@
   margin-left: 800px !important;
 }
 body {
-  background-image: url("../images/wash bg.png");
+  background-image: url("../images/Family\ hub@2x.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: auto 100%;
+  background-size: 100%;
 }
 .nav-link {
   font-family: acumin-pro, sans-serif;
   margin-left: 30px;
   font-size: 25px;
-  color: #c28246 !important;
+  color: rgb(166, 187, 202) !important;
 }
 form {
   padding-top: 180px;
@@ -33,7 +33,7 @@ form {
 }
 .option-btn {
   width: 25%;
-  margin-left: 70%;
+  margin-left: 10%;
   padding-top: 15px;
   padding-bottom: 15px;
   align-content: center;
@@ -49,7 +49,7 @@ form {
   font-size: larger !important;
   padding-top: 15px !important;
   padding-bottom: 15px !important;
-  margin-left: 85%;
+  margin-left: 10%;
 }
 .navbar {
   margin-bottom: 200px !important;
