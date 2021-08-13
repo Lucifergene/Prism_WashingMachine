@@ -10,6 +10,7 @@ app = Flask(__name__)
 app.secret_key = "hello"
 app.permanent_session_lifetime = timedelta(minutes=5)
 api = Api(app)
+app.debug = True
 
 
 @app.route('/', methods=['GET'])
@@ -25,25 +26,53 @@ def washingMachine():
 def downloadFile ():
     path = "nameList.csv"
     return send_file(path, as_attachment=True)
+
+
 class Save_CSV(Resource):
 
     def post(self):
 
-        _hardware = request.form.get('hardware')
-        _software = request.form.get('software')
+        _powerRating = request.form.get('power')
+        _type = request.form.get('type')
+
+        _model = request.form.get('model')
+        _capacity = request.form.get('capacity')
+        _bodyColor = request.form.get('body-color')
+        _panelDisplay = request.form.get('panel-display')
+
+        _specialFeature = request.form.get('sp-feature')
+
+        _connectionType = request.form.get('connection-type')
+        _displayLanguage = request.form.get('display-lang')
+        _speechLanguage = request.form.get('speech-lang')
+
         _timestamp = datetime.datetime.now()
 
-        fieldnames = ['hardware', 'software', 'time']
+
+        fieldnames = ['Power Rating', 'Type', 'Model' , 'Capacity' , 'Body Color' , 'Panel Display' , 'Special Feature' , 'Connection Type' , 'Display Language' , 'Speech Language' , 'Timestamp']
 
         with open('nameList.csv', 'a') as inFile:
             writer = csv.DictWriter(inFile, fieldnames=fieldnames)
             writer.writerow(
-                {'hardware': _hardware, 'software': _software, 'time': _timestamp})
+                {'Power Rating': _powerRating, 
+                 'Type': _type,
+                 'Model': _model,
+                 'Capacity': _capacity,
+                 'Body Color': _bodyColor,
+                 'Panel Display': _panelDisplay,
+                 'Special Feature': _specialFeature,
+                 'Connection Type': _connectionType,
+                 'Display Language': _displayLanguage,
+                 'Speech Language': _speechLanguage,
+                 'Timestamp': _timestamp
+                 })
 
         return redirect(url_for('washingMachine'))
 
 
 api.add_resource(Save_CSV, "/save")
+
+
 
 
 if __name__ == '__main__':
