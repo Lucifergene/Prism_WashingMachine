@@ -1,0 +1,157 @@
+.bi-search {
+  margin-right: 50px !important;
+}
+.form-select {
+  margin-top: 250px;
+  margin-left: 120px;
+  width: 25% !important;
+}
+.btn-outline-danger {
+  margin-top: 10px !important;
+  margin-left: 800px !important;
+}
+body {
+  background-image: url("../images/Microwave@2x.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 110%;
+  background-position: bottom left;
+}
+.nav-link {
+  font-family: acumin-pro, sans-serif;
+  margin-left: 30px;
+  font-size: 25px;
+  color: white !important;
+}
+form {
+  padding-top: 180px;
+  padding-left: 800px;
+  padding-right: 100px;
+  width: 95% !important;
+}
+.btn-outline-success {
+  color: "#c28246" !important;
+}
+.option-btn {
+  width: 25%;
+  margin-left: 70%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  align-content: center;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  background-color: rgb(250, 250, 250) !important;
+  color: rgb(0, 0, 0) !important;
+  font-size: larger;
+}
+.submit-btn {
+  border-radius: 25px !important;
+  width: 10% !important;
+  font-size: larger !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  margin-left: 85%;
+}
+.navbar {
+  margin-bottom: 200px !important;
+}
+
+.wrap {
+  max-width: 33%;
+  margin-left: 33%;
+  padding: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  margin-top: 200px;
+  background-color: white;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.btn-outline-success {
+  margin-left: 90%;
+}
+
+.o1 {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-template-areas:
+    "header header header header header header header  header "
+    "main main main main main main main main "
+    "main main main main main main main main "
+    "footer footer footer footer footer footer  footer footer";
+  grid-gap: 10px;
+}
+h2 {
+  grid-area: header;
+}
+.o1 > label .o1 > input {
+  grid-area: main;
+}
+.btn-outline-success {
+  grid-area: footer;
+}
+.o2 {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-areas: "header header" "main main" "main main" "main main" "main main" "main main" "main main" "main main" "main main" "footer footer";
+  grid-gap: 10px;
+}
+.o3 {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer";
+  grid-gap: 10px;
+}
+.o4 {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer";
+  grid-gap: 10px;
+}
+.o5 {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer";
+}
