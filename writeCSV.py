@@ -4,7 +4,9 @@
 # The form details are fetched from the HTML file and are saved in a CSV File.
 # ================================================ #
 
-import datetime, os, csv
+import datetime
+import os
+import csv
 
 from flask import Flask, redirect, url_for, request, render_template, redirect, send_file
 from flask_restful import Resource
@@ -32,13 +34,13 @@ class Save_WashingMachine_CSV(Resource):
 
         _timestamp = datetime.datetime.now()
 
-
-        fieldnames = ['Power Rating', 'Type', 'Model' , 'Capacity' , 'Body Color' , 'Panel Display' , 'Special Feature' , 'Connection Type' , 'Display Language' , 'Speech Language' , 'Timestamp']
+        fieldnames = ['Power Rating', 'Type', 'Model', 'Capacity', 'Body Color', 'Panel Display',
+                      'Special Feature', 'Connection Type', 'Display Language', 'Speech Language', 'Timestamp']
 
         with open('washing-machine.csv', 'a') as inFile:
             writer = csv.DictWriter(inFile, fieldnames=fieldnames)
             writer.writerow(
-                {'Power Rating': _powerRating, 
+                {'Power Rating': _powerRating,
                  'Type': _type,
                  'Model': _model,
                  'Capacity': _capacity,
@@ -52,7 +54,6 @@ class Save_WashingMachine_CSV(Resource):
                  })
 
         return redirect(url_for('washingMachine'))
-
 
 
 # === Air Conditioner === #
@@ -75,13 +76,13 @@ class Save_AirConditioner_CSV(Resource):
 
         _timestamp = datetime.datetime.now()
 
-
-        fieldnames = ['Power Rating', 'Type', 'Model' , 'Capacity' , 'Body Color' , 'Special Feature' , 'Connection Type' , 'Display Language' , 'Speech Language' , 'Timestamp']
+        fieldnames = ['Power Rating', 'Type', 'Model', 'Capacity', 'Body Color',
+                      'Special Feature', 'Connection Type', 'Display Language', 'Speech Language', 'Timestamp']
 
         with open('air-conditioner.csv', 'a') as inFile:
             writer = csv.DictWriter(inFile, fieldnames=fieldnames)
             writer.writerow(
-                {'Power Rating': _powerRating, 
+                {'Power Rating': _powerRating,
                  'Type': _type,
                  'Model': _model,
                  'Capacity': _capacity,
@@ -104,7 +105,6 @@ class Save_AiSpeaker_CSV(Resource):
         _farField = request.form.get('far-field')
         _bodyColor = request.form.get('body-color')
 
-
         _connectionType = request.form.get('connection-type')
         _displayLanguage = request.form.get('display-lang')
         _speechLanguage = request.form.get('speech-lang')
@@ -113,18 +113,18 @@ class Save_AiSpeaker_CSV(Resource):
 
         _timestamp = datetime.datetime.now()
 
-
-        fieldnames = ['Far Field Voice Processing', 'Body Color' , 'Connection Type' , 'Display Language' , 'Speech Language' , 'Current Mode' ,'Timestamp']
+        fieldnames = ['Far Field Voice Processing', 'Body Color', 'Connection Type',
+                      'Display Language', 'Speech Language', 'Current Mode', 'Timestamp']
 
         with open('ai-speaker.csv', 'a') as inFile:
             writer = csv.DictWriter(inFile, fieldnames=fieldnames)
             writer.writerow(
-                {'Far Field Voice Processing': _farField, 
+                {'Far Field Voice Processing': _farField,
                  'Body Color': _bodyColor,
                  'Connection Type': _connectionType,
                  'Display Language': _displayLanguage,
                  'Speech Language': _speechLanguage,
-                 'Current Mode':_currentMode,
+                 'Current Mode': _currentMode,
                  'Timestamp': _timestamp
                  })
 
@@ -135,22 +135,33 @@ class Save_AiSpeaker_CSV(Resource):
 class Save_Watch_CSV(Resource):
 
     def post(self):
-       
-       ##==================================
+
+       # ==================================
        # Pull the form data into here & push it into the CSV.
-       ##==================================
+       # ==================================
 
+        _bodycolor = request.form.get('body-color')
         _timestamp = datetime.datetime.now()
+        _currentMode = request.form.get('current-mode')
+        _connectionType = request.form.get('connection-type')
+        _dispLang = request.form.get('display-lang')
+        _speechLang = request.form.get('speech-lang')
 
-
-        fieldnames = ['Timestamp']
+        fieldnames = ['Body Color', 'Current Mode', 'Connection Type',
+                      'Display Lang', 'Speech Lang', 'Timestamp']
 
         with open('watch.csv', 'a') as inFile:
             writer = csv.DictWriter(inFile, fieldnames=fieldnames)
             writer.writerow(
                 {
-                 'Timestamp': _timestamp
-                 })
+
+                    'Body Color': _bodycolor,
+                    'Current Mode': _currentMode,
+                    'Connection Type': _connectionType,
+                    'Display Lang': _dispLang,
+                    'Speech Lang': _speechLang,
+                    'Timestamp': _timestamp
+                })
 
         return redirect(url_for('watch'))
 
@@ -160,21 +171,32 @@ class Save_Mobile_CSV(Resource):
 
     def post(self):
 
-         ##==================================
-         # Pull the form data into here & push it into the CSV.
-         ##==================================
-
+        # ==================================
+        # Pull the form data into here & push it into the CSV.
+        # ==================================
+        _spen = request.form.get('s-pen')
+        _bodycolor = request.form.get('body-color')
         _timestamp = datetime.datetime.now()
+        _currentMode = request.form.get('current-mode')
+        _connectionType = request.form.get('connection-type')
+        _dispLang = request.form.get('display-lang')
+        _speechLang = request.form.get('speech-lang')
 
-
-        fieldnames = ['Timestamp']
+        fieldnames = ['S-Pen', 'Body Color', 'Current Mode',
+                      'Connection Type', 'Display Lang', 'Speech Lang', 'Timestamp']
 
         with open('mobile.csv', 'a') as inFile:
             writer = csv.DictWriter(inFile, fieldnames=fieldnames)
             writer.writerow(
                 {
-                 'Timestamp': _timestamp
-                 })
+                    'S-Pen': _spen,
+                    'Body Color': _bodycolor,
+                    'Current Mode': _currentMode,
+                    'Connection Type': _connectionType,
+                    'Display Lang': _dispLang,
+                    'Speech Lang': _speechLang,
+                    'Timestamp': _timestamp
+                })
 
         return redirect(url_for('mobile'))
 
@@ -184,12 +206,11 @@ class Save_Microwave_CSV(Resource):
 
     def post(self):
 
-            ##==================================
-            # Pull the form data into here & push it into the CSV.
-            ##==================================
+        # ==================================
+        # Pull the form data into here & push it into the CSV.
+        # ==================================
 
         _timestamp = datetime.datetime.now()
-
 
         fieldnames = ['Timestamp']
 
@@ -197,8 +218,8 @@ class Save_Microwave_CSV(Resource):
             writer = csv.DictWriter(inFile, fieldnames=fieldnames)
             writer.writerow(
                 {
-                 'Timestamp': _timestamp
-                 })
+                    'Timestamp': _timestamp
+                })
 
         return redirect(url_for('microwave'))
 
@@ -208,12 +229,11 @@ class Save_FamilyHub_CSV(Resource):
 
     def post(self):
 
-        ##==================================
+        # ==================================
         # Pull the form data into here & push it into the CSV.
-        ##==================================
+        # ==================================
 
         _timestamp = datetime.datetime.now()
-
 
         fieldnames = ['Timestamp']
 
@@ -221,9 +241,7 @@ class Save_FamilyHub_CSV(Resource):
             writer = csv.DictWriter(inFile, fieldnames=fieldnames)
             writer.writerow(
                 {
-                 'Timestamp': _timestamp
-                 })
+                    'Timestamp': _timestamp
+                })
 
         return redirect(url_for('familyHub'))
-
-
