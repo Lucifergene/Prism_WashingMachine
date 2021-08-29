@@ -65,294 +65,139 @@
     </div>
   </nav>
 
-    <button type="button" class="option-btn " onclick="openOverlay2()">Hardware feature</button><br>
-    <button type="button" class="option-btn " onclick="openOverlay4()">Connectivity</button><br>
-    <button type="button" class="option-btn " onclick="openOverlay5()">Current Operating System</button><br>
-    <button type="button" class="submit-btn btn btn-success">Success</button>
-
-    <div id="overlay1" class="overlay">
-      <div class="wrap o1">
-      <h2>Broad Catrgory</h2>
-      <label>Type:</label>
-        <br>
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="TopLaod" checked>
-          <label class="form-check-label" for="TopLaod">Top Load</label>
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="Frontload">
-          <label class="form-check-label" for="Frontload">Front Load</label>
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="SemiAuto">
-          <label class="form-check-label" for="SemiAuto">Semi-Auto</label>
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="Auto">
-          <label class="form-check-label" for="Auto">Auto</label>
-      <label>Power Rating:</label>
-          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              choose
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">1</a></li>
-            <li><a class="dropdown-item" href="#">1.5</a></li>
-            <li><a class="dropdown-item" href="#">2</a></li>
-            <li><a class="dropdown-item" href="#">2.5</a></li>
-            <li><a class="dropdown-item" href="#">3</a></li>
-            <li><a class="dropdown-item" href="#">3.5</a></li>
-            <li><a class="dropdown-item" href="#">4</a></li>
-            <li><a class="dropdown-item" href="#">4.5</a></li>
-            <li><a class="dropdown-item" href="#">5</a></li>
-          </ul>
-
-          <button type="button" class="btn btn-outline-success" onclick="closeOverlay()">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-arrow-right"
-                  viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-              </svg>
-          </button>
-    </div>
-  </div>
-
-    <div id ="overlay2"class="overlay">
-      <div class="wrap o2">
-        <h2>Hardware Properties</h2>
-
-        <label>Body Color:</label>
-          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-              choose
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-            <li><a class="dropdown-item" href="#">Silver</a></li>
-            <li><a class="dropdown-item" href="#">Black</a></li>
-            <li><a class="dropdown-item" href="#">Pink</a></li>
-          </ul>
-          
-          <button type="button" class="btn btn-outline-success" onclick="closeOverlay()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-arrow-right"
-                viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-            </svg>
-        </button>
+  <div class="container" style="background-color: rgba(245, 245, 245, 0.4);margin: -180px auto auto auto">
+    <div class="row py-4">
+      <div class="col">
+        <div class="text-center">
+          <h1>Enter Details</h1>
+          <p class="lead">Samsung Watch</p>
+        </div>
       </div>
-  </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-3 col-lg-7">
+        <form action="/save-watch" method="post" id="registration">
+          <nav>
+            <div class="nav nav-pills nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-link active fs-6" id="step1-tab" style="display: none" data-toggle="tab" href="#step1">Broad Category</a>
+              <a class="nav-link fs-6" id="step2-tab" style="color: white !important;
+background-color: cornflowerblue;" data-toggle="tab" href="#step2">Hardware feature</a>
+              <a class="nav-link fs-6" id="step3-tab" style=" color: white !important;
+background-color: cornflowerblue;" data-toggle="tab" href="#step3">Connectivity</a>
+              <a class="nav-link fs-6" id="step4-tab" style="color: white !important;
+ background-color: cornflowerblue;" data-toggle="tab" href="#step4">Current Operating State</a>
+            </div>
+          </nav>
 
-    <div id ="overlay3"class="overlay">
-    <div class="wrap o3">
-      <h2>Software Properties</h2>
-      <label>Bubble Technology:</label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label>Bubble Soak:</label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      
-      <label>Ceremic Heater:</label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label>Child Lock:</label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      
-      
-        <label>Drum Type:</label>
-        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
-            choose
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
-          <li><a class="dropdown-item" href="#">Diamon Drum</a></li>
-        </ul>
-        <label></label><label></label>
-        <label>Motor:</label>
-        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false">
-            choose
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
-          <li><a class="dropdown-item" href="#">DIT</a></li>
-        </ul><label></label><label></label>
+          <div class="tab-content py-4" id="nav-tabContent">
 
-        <label for="weight">Spin Speed(RPM)</label><input type="text" id="weight">
-        <label></label><label></label>
+            <div class="tab-pane fade show active" id="step2">
+              <hr>
+
+             
 
 
-      <label>Quick Wash:</label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label>Bedding:   </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      
-      <label>Daily Wash:      </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label>Delicates:      </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      
-      <label>Hygiene Steam:      </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label>Spin:      </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      
-      <label>Rinse:       </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label>Super Eco Wash:      </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      
-      <label>Wool:      </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label>Cotton:      </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      
-      <label>Eco Drum Clean:      </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label>Prewash:      </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      
-      <label>Intensive:      </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label>Synthetics:      </label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      
-      <label>Error Codes:</label>
+              <div class="form-group mb-2">
+                <label class="fw-bold" for="body-color">Body Color:&nbsp;</label>
+                <select class="form-control" id="body-color" name="body-color">
+                  <option value="Pink">Pink</option>
+                  <option value="Black">Black</option>
+                  <option value="Silver">Silver</option>
+                </select>
+              </div>
 
-      <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton7" data-bs-toggle="dropdown" aria-expanded="false">
-            choose
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton7">
-          <li><a class="dropdown-item" href="#">CE</a></li>
-          <li><a class="dropdown-item" href="#">FE</a></li>
-          <li><a class="dropdown-item" href="#">DE2</a></li>
-          <li><a class="dropdown-item" href="#">DE1</a></li>
-          <li><a class="dropdown-item" href="#">DE</a></li>
-          <li><a class="dropdown-item" href="#">E8</a></li>
-        </ul>
-        <button type="button" class="btn btn-outline-success" onclick="closeOverlay()">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-arrow-right"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-          </svg>
-      </button>
+            </div>
+
+
+            <div class="tab-pane fade"  id="step3">
+              <hr>
+              <div class="form-group mb-3">
+                <label class="fw-bold" for="connection-type">Connection Type</label>
+                <select class="form-control" id="connection-type" name="connection-type">
+                  <option value="SmartThing">SmartThing</option>
+                  <option value="Bluetooth">Bluetooth</option>
+                  <option value="Wifi">Wifi</option>
+                </select>
+              </div>
+
+              <div class="form-group mb-3">
+                <label class="fw-bold" for="display-lang">Display Language</label>
+                <select class="form-control" id="display-lang" name="display-lang">
+                  <option value="en-US">en-US</option>
+                  <option value="ko-KR">ko-KR</option>
+                  <option value="ru-RU">ru-RU</option>
+                </select>
+              </div>
+
+              <div class="form-group mb-3">
+                <label class="fw-bold" for="speech-lang">Speech Language</label>
+                <select class="form-control" id="speech-lang" name="speech-lang">
+                  <option value="en-US">en-US</option>
+                  <option value="ko-KR">ko-KR</option>
+                  <option value="ru-RU">ru-RU</option>
+                </select>
+              </div>
+
+            </div>
+
+            <div class="tab-pane fade" id="step4">
+              <hr>
+              <div class="form-group mb-3">
+                <label class="fw-bold" for="current-mode">Current Mode</label>
+                <select class="form-control" id="current-mode" name="current-mode">
+                  <option value="Idle">Idle</option>
+                  <option value="Call">Call</option>
+                  <option value="Game">Game</option>
+                  <option value="Music">Music</option>
+                  <option value="Video">Video</option>
+                </select>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="row justify-content-between py-4">
+            <div style="display: none" class=""><button type="button" class="btn btn-secondary"
+                data-enchanter="previous">Previous</button></div>
+            <div class="d-grid gap-2">
+              <button type="button" class="btn btn-success" data-enchanter="next">Next</button>
+              <button type="submit" class="btn btn-danger" id="click" data-enchanter="finish">Finish</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
-
-
-  <div id ="overlay4"class="overlay">
-    <div class="wrap o4">
-      <h2>Connectivity</h2>
-      
-      <label>SmartThing Support:</label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label>Bluetooth:</label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label>Wifi:</label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label>NFC:</label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      
-      <label>Display Language:</label>
-        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton8" data-bs-toggle="dropdown" aria-expanded="false">
-            choose
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton8">
-          <li><a class="dropdown-item" href="#">en-US</a></li>
-          <li><a class="dropdown-item" href="#">ko-KR</a></li>
-          <li><a class="dropdown-item" href="#">ru-RU</a></li>
-        </ul>
-        <label></label>
-        <label></label>
-        <label>Speech Language:</label>
-        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton9" data-bs-toggle="dropdown" aria-expanded="false">
-            choose
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton9">
-          <li><a class="dropdown-item" href="#">en-US</a></li>
-          <li><a class="dropdown-item" href="#">ko-KR</a></li>
-          <li><a class="dropdown-item" href="#">ru-RU</a></li>
-        </ul>        <label></label>
-        <label></label>
-
-        
-        <button type="button" class="btn btn-outline-success" onclick="closeOverlay()">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-arrow-right"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-          </svg>
-      </button>
-    </div>
-</div>
-
-<div id ="overlay5"class="overlay">
-  <div class="wrap o5">
-    <h2>Current Operating State</h2>
-
-
-
-    <label>Current Mode:</label>
-      <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton10" data-bs-toggle="dropdown" aria-expanded="false">
-          choose
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton10">
-        <li><a class="dropdown-item" href="#">Idle</a></li>
-        <li><a class="dropdown-item" href="#">Music</a></li>
-        <li><a class="dropdown-item" href="#">Call</a></li>
-        <li><a class="dropdown-item" href="#">App running</a></li>
-        <li><a class="dropdown-item" href="#">Error</a></li>
-      </ul>
-
-
-
-
-
-    <label></label><label></label>
-
-
-
-
-
-
-    <label>WifiConnected:</label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-    <label>Bluetooth Connected:</label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-    <label>Internet Availibility:</label>  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-<label></label><label></label>
-
-
-
-
-
-
-
-
-
-    <label>Current Display Language:</label>
-      <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton14" data-bs-toggle="dropdown" aria-expanded="false">
-          choose
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton14">
-        <li><a class="dropdown-item" href="#">en-US</a></li>
-          <li><a class="dropdown-item" href="#">ko-KR</a></li>
-          <li><a class="dropdown-item" href="#">ru-RU</a></li>
-      </ul>
-<label></label><label></label>
-      
-      <label>Curret Speech Language:</label>
-      <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton15" data-bs-toggle="dropdown" aria-expanded="false">
-          choose
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton15">
-        <li><a class="dropdown-item" href="#">en-US</a></li>
-          <li><a class="dropdown-item" href="#">ko-KR</a></li>
-          <li><a class="dropdown-item" href="#">ru-RU</a></li>
-      </ul>
-<label></label><label></label>
-     
-      <button type="button" class="btn btn-outline-success" onclick="closeOverlay()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-arrow-right"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-        </svg>
-    </button>
-  </div>
-</div>
-
-
 
 
   <script>
     $('#click').on('click', function () {
-      Swal.fire('The Details have been successfully saved')
+      window.alert("The Details have been successfully saved")
     })
-    function openOverlay1(){
-      document.getElementById("overlay1").style.display="block";
-    }
-    function closeOverlay(){
-      var x=document.getElementsByClassName("overlay");
-      for(var i=0;i<x.length;i++)
-        x[i].style.display="none";
-    }
-    function openOverlay2(){
-      document.getElementById("overlay2").style.display="block";
-    }
-    function openOverlay3(){
-      document.getElementById("overlay3").style.display="block";
-    }
-    function openOverlay4(){
-      document.getElementById("overlay4").style.display="block";
-    }
-    function openOverlay5(){
-      document.getElementById("overlay5").style.display="block";
-    }
   </script>
 
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+  <script src="../static/js/enchanter.js"></script>
+  <script>
+    var registrationForm = $('#registration');
+    var formValidate = registrationForm.validate({
+      errorClass: 'is-invalid',
+      errorPlacement: () => false
+    });
+
+    const wizard = new Enchanter('registration', {}, {
+      onNext: () => {
+        if (!registrationForm.valid()) {
+          formValidate.focusInvalid();
+          return false;
+        }
+      }
+    });
+  </script>
 
 
 
