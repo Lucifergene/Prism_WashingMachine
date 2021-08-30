@@ -23,12 +23,12 @@ body {
   font-size: 25px;
   color: white !important;
 }
-form {
+/* form {
   padding-top: 180px;
   padding-left: 800px;
   padding-right: 100px;
   width: 95% !important;
-}
+} */
 .btn-outline-success {
   color: "#c28246" !important;
 }

@@ -206,19 +206,40 @@ class Save_Microwave_CSV(Resource):
 
     def post(self):
 
-        # ==================================
-        # Pull the form data into here & push it into the CSV.
-        # ==================================
+        _powerRating = request.form.get('power')
+        _type = request.form.get('type')
+
+        _model = request.form.get('model')
+        _capacity = request.form.get('capacity')
+        _bodyColor = request.form.get('body-color')
+        _controlMethod = request.form.get('control-method')
+
+        _connectionType = request.form.get('connection-type')
+        _displayLanguage = request.form.get('display-lang')
+        _speechLanguage = request.form.get('speech-lang')
 
         _timestamp = datetime.datetime.now()
 
-        fieldnames = ['Timestamp']
+        fieldnames = ['Power Rating', 'Type', 'Model', 'Capacity', 'Body Color', 'Control Method',
+                      'Connection Type', 'Display Language', 'Speech Language', 'Timestamp']
 
         with open('microwave.csv', 'a') as inFile:
             writer = csv.DictWriter(inFile, fieldnames=fieldnames)
             writer.writerow(
                 {
+
+                    'Power Rating': _powerRating,
+                    'Type': _type,
+                    'Model': _model,
+                    'Capacity': _capacity,
+                    'Body Color': _bodyColor,
+                    'Control Method': _controlMethod,
+
+                    'Connection Type': _connectionType,
+                    'Display Language': _displayLanguage,
+                    'Speech Language': _speechLanguage,
                     'Timestamp': _timestamp
+
                 })
 
         return redirect(url_for('microwave'))
