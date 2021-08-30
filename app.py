@@ -37,9 +37,9 @@ def airConditioner():
 def aiSpeaker():
     return render_template('AiSpeaker.html')
 
-@app.route('/family-hub', methods=['GET'])
-def familyHub():
-    return render_template('FamilyHub.html')
+# @app.route('/family-hub', methods=['GET'])
+# def familyHub():
+#     return render_template('FamilyHub.html')
 
 @app.route('/microwave', methods=['GET'])
 def microWave():

@@ -242,7 +242,7 @@ class Save_Microwave_CSV(Resource):
 
                 })
 
-        return redirect(url_for('microwave'))
+        return redirect(url_for('microWave'))
 
 
 # === FamilyHub === #
