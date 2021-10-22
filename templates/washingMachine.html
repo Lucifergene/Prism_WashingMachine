@@ -111,6 +111,12 @@
                   <option value="1.5">1.5</option>
                   <option value="2">2</option>
                   <option value="2.5">2.5</option>
+                  <option value="2.5">3</option>
+                  <option value="2.5">3.5</option>
+                  <option value="2.5">4</option>
+                  <option value="2.5">4.5</option>
+                  <option value="2.5">5</option>
+                  
                 </select>
               </div>
 
@@ -168,26 +174,89 @@
 
             </div>
 
-
+            <!-- made changes here -->
             <div class="tab-pane fade" id="step3">          
               <hr>
-              <label class="mb-2 fw-bold"><b>Special Feature</b></label><br>
-
-              <div class="form-check">
-                <input class="form-check-input" type="radio" id="bubble-tech" name="sp-feature"
-                  value="Bubble Technology">
+              <div>
+                <input class="form-check-input" type="checkbox" id="bubble-tech" value="Bubble Technology">
                 <label class="form-check-label" for="bubble-tech">Bubble Technology</label>
-              </div>
-
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="sp-feature" id="bubble-soak" value="Bubble Soak">
+                <input  class="form-check-input" type="checkbox"  id="bubble-soak" value="Bubble Soak">
                 <label class="form-check-label" for="bubble-soak">Bubble Soak</label>
               </div>
 
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="sp-feature" id="ceramic" value="Ceremic Heater">
+              <div>
+                <input class="form-check-input" type="checkbox" id="ceramic" value="Ceremic Heater">
                 <label class="form-check-label" for="ceramic">Ceremic Heater</label>
+                <input class="form-check-input" type="checkbox" id="ChildLock" value="Child Lock">
+                <label class="form-check-label" for="ChildLock">Child Lock</label>
               </div>
+              <div >
+                <input class="form-check-input" type="checkbox" id="QuickWash" value="Quick Wash">
+                <label class="form-check-label" for="QuickWash">Quick Wash</label>
+                <input class="form-check-input" type="checkbox" id="Bedding" value="Bedding">
+                <label class="form-check-label" for="Bedding">Bedding</label>
+              </div>
+              <div>
+                <input class="form-check-input" type="checkbox" id="DailyWash" value="Daily Wash">
+                <label class="form-check-label" for="DailyWash">Daily Wash</label>
+                <input class="form-check-input" type="checkbox" id="Delicates" value="Delicates">
+                <label class="form-check-label" for="Delicates">Delicates</label>
+              </div>
+              <div>
+                <input class="form-check-input" type="checkbox" id="HygineSteam" value="Hygine Steam">
+                <label class="form-check-label" for="HygineSteam">Hygine Steam</label>
+                <input class="form-check-input" type="checkbox" id="Spin" value="Spin">
+                <label class="form-check-label" for="Spin">Spin</label>
+              </div>
+              <div>
+                <input class="form-check-input" type="checkbox" id="Rinse" value="Rinse">
+                <label class="form-check-label" for="Rinse">Rinse</label>
+                <input class="form-check-input" type="checkbox" id="SuperCoolWash" value="Super Cool Wash">
+                <label class="form-check-label" for="SuperCoolWash">Super Cool Wash</label>
+              </div>
+              <div>
+                <input class="form-check-input" type="checkbox" id="Wool" value="Wool">
+                <label class="form-check-label" for="Wool">Wool</label>
+                <input class="form-check-input" type="checkbox" id="Cotton" value="Cotton">
+                <label class="form-check-label" for="Cotton">Cotton</label>
+              </div>
+              <div>
+                <input class="form-check-input" type="checkbox" id="EcoDrumClean" value="Eco Drum Clean">
+                <label class="form-check-label" for="EcoDrumClean">Eco Drum Clean</label>
+                <input class="form-check-input" type="checkbox" id="Prewash" value="Prewash">
+                <label class="form-check-label" for="Prewash">Prewash</label>
+              </div>
+              <div>
+                <input class="form-check-input" type="checkbox" id="Intensive" value="Intensive">
+                <label class="form-check-label" for="Intensive">Intensive</label>
+                <input class="form-check-input" type="checkbox" id="Synthesis" value="Synthesis">
+                <label class="form-check-label" for="Synthesis">Synthesis</label>
+              </div>
+
+              <div class="form-group mb-3">
+                <label class="fw-bold" for="DrunType">Drun Type</label>
+                <input type="text" class="form-control" name="DrunType" id="DrunType">
+              </div>
+              <div class="form-group mb-3">
+                <label class="fw-bold" for="Motor">Motor</label>
+                <input type="text" class="form-control" name="Motor" id="Motor">
+              </div>
+              <div class="form-group mb-3">
+                <label class="fw-bold" for="SpinSpeed">Spin Speed (rpm)</label>
+                <input type="text" class="form-control" name="SpinSpeed" id="SpinSpeed">
+              </div>
+              <div class="form-group mb-3">
+                <label class="fw-bold" for="ErrorCodes">Error Codes:</label>
+                <select class="form-control" id="ErrorCodes" name="Error-Codes">
+                  <option value="CE">CE</option>
+                  <option value="E8">E8</option>
+                  <option value="DE">DE</option>
+                  <option value="DE1">DE1</option>
+                  <option value="DE2">DE2</option>
+                  <option value="FE">FE</option>
+                </select>
+              </div>
+
 
 
             </div>
@@ -196,11 +265,28 @@
               <hr>
               <div class="form-group mb-3">
                 <label class="fw-bold" for="connection-type">Connection Type</label>
-                <select class="form-control" id="connection-type" name="connection-type">
+                <!-- <select class="form-control" id="connection-type" name="connection-type">
                   <option value="SmartThing">SmartThing</option>
                   <option value="Bluetooth">Bluetooth</option>
                   <option value="Wifi">Wifi</option>
-                </select>
+                </select> -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="SmartThing" id="connection-type-1">
+                  <label class="form-check-label" for="connection-type-1">
+                    SmartThing
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Bluetooth" id="connection-type-2" >
+                  <label class="form-check-label" for="connection-type-2">
+                    Bluetooth
+                  </label>
+                </div><div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Wifi" id="connection-type-3">
+                  <label class="form-check-label" for="connection-type-3">
+                    Wifi
+                  </label>
+                </div>
               </div>
 
               <div class="form-group mb-3">
