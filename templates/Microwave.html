@@ -82,7 +82,7 @@
               background-color: cornflowerblue;" data-toggle="tab" href="#step1">Broad Category</a>
               <a class="nav-link fs-6" id="step2-tab" style="color: white !important;
               background-color: cornflowerblue;" data-toggle="tab" href="#step2">Hardware feature</a>
-              <a class="nav-link fs-6" id="step3-tab" style="display:none; color: white !important;
+              <a class="nav-link fs-6" id="step3-tab" style=" color: white !important;
               background-color: cornflowerblue;" data-toggle="tab" href="#step3">Software feature</a>
               <a class="nav-link fs-6" id="step4-tab" style="color: white !important;
                background-color: cornflowerblue;" data-toggle="tab" href="#step4">Connectivity</a>
@@ -99,6 +99,11 @@
                   <option value="1.5">1.5</option>
                   <option value="2">2</option>
                   <option value="2.5">2.5</option>
+                  <option value="3">3</option>
+                  <option value="3.5">3.5</option>
+                  <option value="4">4</option>
+                  <option value="4.5">4.5</option>
+                  <option value="5">5</option>
                 </select>
               </div>
 
@@ -132,7 +137,7 @@
               </div>
 
               <div class="form-group mb-3">
-                <label class="fw-bold" for="capacity">Washing Capacity(kg)</label>
+                <label class="fw-bold" for="capacity">Capacity(ltr)</label>
                 <input type="text" class="form-control" name="capacity" id="capacity">
               </div>
 
@@ -159,26 +164,74 @@
             </div>
 
 
-            <div class="tab-pane fade"style="display:none;"id="step3">          
-              <hr>
-              <label class="mb-2 fw-bold"><b>Special Feature</b></label><br>
-
-              <div class="form-check">
-                <input class="form-check-input" type="radio" id="bubble-tech" name="sp-feature"
-                  value="Bubble Technology">
-                <label class="form-check-label" for="bubble-tech">Bubble Technology</label>
+            <div class="tab-pane fade"id="step3">          
+              < <hr>
+              <div>
+                <input class="form-check-input" type="checkbox" id="Preheat" value="Preheat">
+                <label class="form-check-label" for="Preheat">Preheat</label>
+                <input  class="form-check-input" type="checkbox"  id="KeepWarm" value="Keep Warm">
+                <label class="form-check-label" for="KeepWarm">Keep Warm</label>
               </div>
 
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="sp-feature" id="bubble-soak" value="Bubble Soak">
-                <label class="form-check-label" for="bubble-soak">Bubble Soak</label>
+              <div>
+                <input class="form-check-input" type="checkbox" id="EcoMode" value="Eco Mode">
+                <label class="form-check-label" for="EcoMode">Eco Mode</label>
+                <input class="form-check-input" type="checkbox" id="Defrost" value="Defrost">
+                <label class="form-check-label" for="Defrost">Defrost</label>
               </div>
-
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="sp-feature" id="ceramic" value="Ceremic Heater">
-                <label class="form-check-label" for="ceramic">Ceramic Heater</label>
+              <div >
+                <input class="form-check-input" type="checkbox" id="SensorCook" value="Sensor Cook">
+                <label class="form-check-label" for="SensorCook">Sensor Cook</label>
+                <input class="form-check-input" type="checkbox" id="SteamCook" value="Steam Cook">
+                <label class="form-check-label" for="SteamCook">Steam Cook</label>
               </div>
-
+              <div>
+                <input class="form-check-input" type="checkbox" id="AutoSteamCook" value="Auto Steam Cook">
+                <label class="form-check-label" for="AutoSteamCook">Auto Steam Cook</label>
+                <input class="form-check-input" type="checkbox" id="AutoPrograms" value="Auto Programs">
+                <label class="form-check-label" for="AutoPrograms">Auto Programs</label>
+              </div>
+              <div>
+                <input class="form-check-input" type="checkbox" id="AutoCook" value="Auto Cook">
+                <label class="form-check-label" for="AutoCook">Auto Cook</label>
+                <input class="form-check-input" type="checkbox" id="SLIMFRY" value="SLIM FRY">
+                <label class="form-check-label" for="SLIMFRY">SLIM FRY</label>
+              </div>
+              <div>
+                <input class="form-check-input" type="checkbox" id="DoughProof" value="Dough Proof/Yogurt">
+                <label class="form-check-label" for="DoughProof">Dough Proof/Yogurt</label>
+                <input class="form-check-input" type="checkbox" id="SteamClean" value="Steam Clean">
+                <label class="form-check-label" for="SteamClean">Steam Clean</label>
+              </div>
+              <div>
+                <input class="form-check-input" type="checkbox" id="Turntable" value="Turntable On/Off">
+                <label class="form-check-label" for="Turntable">Turntable On/Off</label>
+                <input class="form-check-input" type="checkbox" id="Deodorization" value="Deodorization">
+                <label class="form-check-label" for="Deodorization">Deodorization</label>
+              </div>
+              <div>
+                <input class="form-check-input" type="checkbox" id="ChildSafetyLock" value="Child Safety Lock">
+                <label class="form-check-label" for="ChildSafetyLock">Child Safety Lock</label>
+                <input class="form-check-input" type="checkbox" id="KitchenTimer" value="Kitchen Timer">
+                <label class="form-check-label" for="KitchenTimer">Kitchen Timer</label>
+              </div>
+              <div>
+                <input class="form-check-input" type="checkbox" id="Memory" value="Memory">
+                <label class="form-check-label" for="Memory">Memory</label>
+              </div>
+              <div class="form-group mb-3">
+                <label class="fw-bold" for="ErrorCodes">Error Codes:</label>
+                <select class="form-control" id="ErrorCodes" name="Error-Codes">
+                  <option value="C10">C10</option>
+                  <option value="C11">C11</option>
+                  <option value="C20">C20</option>
+                  <option value="C21">C21</option>
+                  <option value="C70">C70</option>
+                  <option value="C10">C10</option>
+                  <option value="CD0">CD0</option>
+                  <option value="E01">E01</option>
+                </select>
+              </div>
 
             </div>
 
@@ -186,11 +239,28 @@
               <hr>
               <div class="form-group mb-3">
                 <label class="fw-bold" for="connection-type">Connection Type</label>
-                <select class="form-control" id="connection-type" name="connection-type">
+                <!-- <select class="form-control" id="connection-type" name="connection-type">
                   <option value="SmartThing">SmartThing</option>
                   <option value="Bluetooth">Bluetooth</option>
                   <option value="Wifi">Wifi</option>
-                </select>
+                </select> -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="SmartThing" id="connection-type-1">
+                  <label class="form-check-label" for="connection-type-1">
+                    SmartThing
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Bluetooth" id="connection-type-2" >
+                  <label class="form-check-label" for="connection-type-2">
+                    Bluetooth
+                  </label>
+                </div><div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Wifi" id="connection-type-3">
+                  <label class="form-check-label" for="connection-type-3">
+                    Wifi
+                  </label>
+                </div>
               </div>
 
               <div class="form-group mb-3">
