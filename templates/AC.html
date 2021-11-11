@@ -112,6 +112,11 @@
                                     <option value="1.5">1.5</option>
                                     <option value="2">2</option>
                                     <option value="2.5">2.5</option>
+                                    <option value="3">3</option>
+                                    <option value="3.5">3.5</option>
+                                    <option value="4">4</option>
+                                    <option value="4.5">4.5</option>
+                                    <option value="5">5</option>
                                 </select>
                             </div>
 
@@ -166,25 +171,62 @@
 
                         <div class="tab-pane fade" id="step3">
                             <hr>
-                            <label class="mb-2 fw-bold"><b>Special Feature</b></label><br>
+                            <div>
+                                <input class="form-check-input" type="checkbox" id="AIAutoCooling" value="AI Auto Cooling">
+                                <label class="form-check-label" for="AIAutoCooling">AI Auto Cooling</label>
+                                <input  class="form-check-input" type="checkbox"  id="MotionDetectSensor" value="Motion Detect Sensor">
+                                <label class="form-check-label" for="MotionDetectSensor">Motion Detect Sensor</label>
+                              </div>
+                
+                              <div>
+                                <input class="form-check-input" type="checkbox" id="FreezeWash" value="Freeze Wash">
+                                <label class="form-check-label" for="FreezeWash">Freeze Wash</label>
+                                <input class="form-check-input" type="checkbox" id="FilterCleaningIndicator" value="Filter Cleaning Indicator">
+                                <label class="form-check-label" for="FilterCleaningIndicator">Filter Cleaning Indicator</label>
+                              </div>
+                              <div >
+                                <input class="form-check-input" type="checkbox" id="IndoorTempDisplay" value="Indoor Temp Display">
+                                <label class="form-check-label" for="IndoorTempDisplay">Indoor Temp. Display</label>
+                                <input class="form-check-input" type="checkbox" id="AutoRestart" value="Auto Restart">
+                                <label class="form-check-label" for="AutoRestart">Auto Restart</label>
+                              </div>
+                              <div>
+                                <input class="form-check-input" type="checkbox" id="AutoChangeover" value="Auto Changeover">
+                                <label class="form-check-label" for="AutoChangeover">Auto Changeover</label>
+                                <input class="form-check-input" type="checkbox" id="AutoMode" value="Auto Mode">
+                                <label class="form-check-label" for="AutoMode">Auto Mode</label>
+                              </div>
+                              <div>
+                                <input class="form-check-input" type="checkbox" id="FastCool" value="Fast Cool">
+                                <label class="form-check-label" for="FastCool">Fast Cool</label>
+                                <input class="form-check-input" type="checkbox" id="GoodSleep" value="Good Sleep">
+                                <label class="form-check-label" for="GoodSleep">Good Sleep</label>
+                              </div>
+                              <div>
+                                <input class="form-check-input" type="checkbox" id="EcoMode" value="Eco Mode">
+                                <label class="form-check-label" for="EcoMode">Eco Mode</label>
+                                <input class="form-check-input" type="checkbox" id="Dehumidification" value="Dehumidification">
+                                <label class="form-check-label" for="Dehumidification">Dehumidification</label>
+                              </div>
+                              <div>
+                                <input class="form-check-input" type="checkbox" id="FanMode" value="Fan Mode">
+                                <label class="form-check-label" for="FanMode">Fan Mode</label>
+                                <input class="form-check-input" type="checkbox" id="Rinse " value="Rinse ">
+                                <label class="form-check-label" for="Rinse ">Rinse </label>
+                              </div>
 
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" id="ai-cool" name="sp-feature"
-                                    value="AI Auto Cooling">
-                                <label class="form-check-label" for="ai-cool">AI Auto Cooling</label>
-                            </div>
 
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="sp-feature" id="motion-sensor"
-                                    value="Motion Detect Sensor">
-                                <label class="form-check-label" for="motion-sensor">Motion Detect Sensor</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="sp-feature" id="eco-mode"
-                                    value="Eco Mode">
-                                <label class="form-check-label" for="eco-mode">Eco Mode</label>
-                            </div>
+                              <div class="form-group mb-3">
+                                <label class="fw-bold" for="ErrorCodes">Error Codes:</label>
+                                <select class="form-control" id="ErrorCodes" name="Error-Codes">
+                                  <option value="CH">CH</option>
+                                  <option value="E121">E121</option>
+                                  <option value="E122">E122</option>
+                                  <option value="E201">E201</option>
+                                  <option value="E221">E221</option>
+                                  
+                                </select>
+                              </div>
 
                         </div>
 
@@ -192,12 +234,35 @@
                             <hr>
                             <div class="form-group mb-3">
                                 <label class="fw-bold" for="connection-type">Connection Type</label>
-                                <select class="form-control" id="connection-type" name="connection-type">
-                                    <option value="SmartThing">SmartThing</option>
-                                    <option value="Bluetooth">Bluetooth</option>
-                                    <option value="Wifi">Wifi</option>
-                                </select>
-                            </div>
+                                <!-- <select class="form-control" id="connection-type" name="connection-type">
+                                  <option value="SmartThing">SmartThing</option>
+                                  <option value="Bluetooth">Bluetooth</option>
+                                  <option value="Wifi">Wifi</option>
+                                </select> -->
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="SmartThing" id="connection-type-1">
+                                  <label class="form-check-label" for="connection-type-1">
+                                    SmartThing
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="Bluetooth" id="connection-type-2" >
+                                  <label class="form-check-label" for="connection-type-2">
+                                    Bluetooth
+                                  </label>
+                                </div><div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="Wifi" id="connection-type-3">
+                                  <label class="form-check-label" for="connection-type-3">
+                                    Wifi
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Voice Assistant" id="connection-type-4">
+                                <label class="form-check-label" for="connection-type-4">
+                                  Voice Assistant
+                                </label>
+                              </div>
 
                             <div class="form-group mb-3">
                                 <label class="fw-bold" for="display-lang">Display Language</label>
