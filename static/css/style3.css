@@ -1,39 +1,42 @@
-.bi-search {
+.bi-search{
   margin-right: 50px !important;
 }
-.form-select {
+.form-select{
   margin-top: 250px;
   margin-left: 120px;
   width: 25% !important;
+
 }
-.btn-outline-danger {
+
+.btn-outline-danger{
   margin-top: 10px !important;
   margin-left: 800px !important;
 }
-body {
-  background-image: url("../images/Family\ hub@2x.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
+body{
+  background: url("../images/Familyhub@2x.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-.nav-link {
-  font-family: acumin-pro, sans-serif;
+.nav-link{
+  font-family: acumin-pro,sans-serif;
   margin-left: 30px;
   font-size: 25px;
-  color: rgb(166, 187, 202) !important;
+  color:#c28246 !important;
 }
-form {
+/* form{
   padding-top: 180px;
   padding-left: 800px;
   padding-right: 100px;
   width: 95% !important;
-}
-.btn-outline-success {
+} */
+.btn-outline-success{
   color: "#c28246" !important;
 }
-.option-btn {
+.option-btn{
   width: 25%;
-  margin-left: 10%;
+  margin-left: 70%;
   padding-top: 15px;
   padding-bottom: 15px;
   align-content: center;
@@ -43,30 +46,33 @@ form {
   color: rgb(0, 0, 0) !important;
   font-size: larger;
 }
-.submit-btn {
+.submit-btn{
   border-radius: 25px !important;
   width: 10% !important;
   font-size: larger !important;
   padding-top: 15px !important;
   padding-bottom: 15px !important;
-  margin-left: 10%;
+  margin-left: 85%;
 }
-.navbar {
+.navbar{
   margin-bottom: 200px !important;
 }
 
-.wrap {
+
+
+.wrap{
+  
   max-width: 33%;
   margin-left: 33%;
   padding: 20px;
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-
+  
   margin-top: 200px;
   background-color: white;
 }
-.overlay {
+.overlay{
   height: 100%;
   width: 100%;
   display: none;
@@ -76,81 +82,81 @@ form {
   left: 0;
   background: rgba(0, 0, 0, 0.7);
 }
-.btn-outline-success {
-  margin-left: 90%;
+.btn-outline-success{
+  margin-left: 90%;  
 }
 
-.o1 {
+
+.o1{
   display: grid;
-  grid-template-columns: repeat(10, auto);
-  grid-template-areas:
-    "header header header header header header header  header header header"
-    "main main main main main main main main main main"
-    "main main main main main main main main main main"
-    "footer footer footer footer footer footer footer footer footer footer";
+  grid-template-columns: repeat(10,auto);
+  grid-template-areas: 
+  'header header header header header header header  header header header'
+  'main main main main main main main main main main'
+  'main main main main main main main main main main'
+  'footer footer footer footer footer footer footer footer footer footer';
   grid-gap: 10px;
 }
-h2 {
+h2{
   grid-area: header;
 }
-.o1 > label .o1 > input {
+.o1>label .o1>input{
   grid-area: main;
 }
-.btn-outline-success {
-  grid-area: footer;
+.btn-outline-success{
+  grid-area:footer;
 }
-.o2 {
+.o2{
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-areas: "header header" "main main" "main main" "main main" "main main" "main main" "main main" "main main" "main main" "footer footer";
+  grid-template-columns: repeat(2,auto) ;
+  grid-template-areas: 'header header' 'main main' 'main main' 'main main' 'main main' 'main main' 'main main' 'main main' 'main main' 'footer footer';
   grid-gap: 10px;
 }
-.o3 {
+.o3{
   display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-template-areas:
-    "header header header header"
-    "main main main main"
-    "main main main main"
-    "main main main main"
-    "main main main main"
-    "main main main main"
-    "main main main main"
-    "main main main main"
-    "main main main main"
-    "main main main main"
-    "main main main main"
-    "main main main main"
-    "main main main main"
-    "main main main main"
-    "footer footer footer footer";
+  grid-template-columns: repeat(4,auto);
+  grid-template-areas: 'header header header header'
+  'main main main main'
+  'main main main main'
+  'main main main main'
+  'main main main main'
+  'main main main main'
+  'main main main main'
+  'main main main main'
+  'main main main main'
+  'main main main main'
+  'main main main main'
+  'main main main main'
+  'main main main main'
+  'main main main main'
+  'footer footer footer footer';
   grid-gap: 10px;
 }
-.o4 {
+.o4{
   display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-template-areas:
-    "header header header header"
-    "main main main main"
-    "main main main main"
-    "main main main main"
-    "main main main main"
-    "footer footer footer footer";
+  grid-template-columns: repeat(4,auto);
+  grid-template-areas: 'header header header header'
+  'main main main main'
+  'main main main main'
+  'main main main main'
+  'main main main main'
+  'footer footer footer footer'  ;
   grid-gap: 10px;
 }
-.o5 {
+.o5{
   display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-template-areas:
-    "header header header header"
-    "main main main main"
-    "main main main main"
-    "main main main main"
-    "main main main main"
-    "main main main main"
-    "main main main main"
-    "main main main main"
-    "main main main main"
-    "main main main main"
-    "footer footer footer footer";
+  grid-template-columns: repeat(4,auto);
+  grid-template-areas: 
+  'header header header header'
+  'main main main main'
+  'main main main main'
+  'main main main main'
+  'main main main main'
+  'main main main main'
+  'main main main main'
+  'main main main main'
+  'main main main main'
+  'main main main main'
+  'footer footer footer footer'
+  ;
 }

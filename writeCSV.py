@@ -26,16 +26,21 @@ class Save_WashingMachine_CSV(Resource):
         _bodyColor = request.form.get('body-color')
         _panelDisplay = request.form.get('panel-display')
 
-        _specialFeature = request.form.get('sp-feature')
+        _specialFeature = request.form.getlist('sp-feature')
 
-        _connectionType = request.form.get('connection-type')
+        _drumType = request.form.get('drum-type')
+        _motor = request.form.get('motor')
+        _spinSpeed = request.form.get('spin-speed')
+        _errorCodes = request.form.get('error-codes')
+
+        _connectionType = request.form.getlist('connection-type')
         _displayLanguage = request.form.get('display-lang')
         _speechLanguage = request.form.get('speech-lang')
 
         _timestamp = datetime.datetime.now()
 
         fieldnames = ['Power Rating', 'Type', 'Model', 'Capacity', 'Body Color', 'Panel Display',
-                      'Special Feature', 'Connection Type', 'Display Language', 'Speech Language', 'Timestamp']
+                      'Special Feature', 'Drum Type', 'Motor', 'Spin Speed', 'Error Codes', 'Connection Type', 'Display Language', 'Speech Language', 'Timestamp']
 
         with open('washing-machine.csv', 'a') as inFile:
             writer = csv.DictWriter(inFile, fieldnames=fieldnames)
@@ -47,6 +52,10 @@ class Save_WashingMachine_CSV(Resource):
                  'Body Color': _bodyColor,
                  'Panel Display': _panelDisplay,
                  'Special Feature': _specialFeature,
+                 'Drum Type': _drumType,
+                 'Motor': _motor,
+                 'Spin Speed': _spinSpeed,
+                 'Error Codes': _errorCodes,
                  'Connection Type': _connectionType,
                  'Display Language': _displayLanguage,
                  'Speech Language': _speechLanguage,
@@ -68,9 +77,9 @@ class Save_AirConditioner_CSV(Resource):
         _capacity = request.form.get('capacity')
         _bodyColor = request.form.get('body-color')
 
-        _specialFeature = request.form.get('sp-feature')
+        _specialFeature = request.form.getlist('sp-feature')
 
-        _connectionType = request.form.get('connection-type')
+        _connectionType = request.form.getlist('connection-type')
         _displayLanguage = request.form.get('display-lang')
         _speechLanguage = request.form.get('speech-lang')
 
@@ -105,16 +114,19 @@ class Save_AiSpeaker_CSV(Resource):
         _farField = request.form.get('far-field')
         _bodyColor = request.form.get('body-color')
 
-        _connectionType = request.form.get('connection-type')
-        _displayLanguage = request.form.get('display-lang')
+        _connectionType = request.form.getlist('connection-type')
         _speechLanguage = request.form.get('speech-lang')
 
         _currentMode = request.form.get('current-mode')
+        _wifiConnected = request.form.get('wifi-conn')
+        _bluetoothConnected = request.form.get('bluetooth-conn')
+        _internetAvailablity = request.form.get('int-avail')
+        _currentspeechLanguage = request.form.get('current-speech-lang')
 
         _timestamp = datetime.datetime.now()
 
         fieldnames = ['Far Field Voice Processing', 'Body Color', 'Connection Type',
-                      'Display Language', 'Speech Language', 'Current Mode', 'Timestamp']
+                      'Speech Language', 'Current Mode', 'Wifi Connected', 'Bluetooth Connected', 'Internet Availablity', 'Current Speech Language', 'Timestamp']
 
         with open('ai-speaker.csv', 'a') as inFile:
             writer = csv.DictWriter(inFile, fieldnames=fieldnames)
@@ -122,9 +134,12 @@ class Save_AiSpeaker_CSV(Resource):
                 {'Far Field Voice Processing': _farField,
                  'Body Color': _bodyColor,
                  'Connection Type': _connectionType,
-                 'Display Language': _displayLanguage,
                  'Speech Language': _speechLanguage,
                  'Current Mode': _currentMode,
+                 'Wifi Connected': _wifiConnected,
+                 'Bluetooth Connected': _bluetoothConnected,
+                 'Internet Availablity': _internetAvailablity,
+                 'Current Speech Language': _currentspeechLanguage,
                  'Timestamp': _timestamp
                  })
 
@@ -143,7 +158,7 @@ class Save_Watch_CSV(Resource):
         _bodycolor = request.form.get('body-color')
         _timestamp = datetime.datetime.now()
         _currentMode = request.form.get('current-mode')
-        _connectionType = request.form.get('connection-type')
+        _connectionType = request.form.getlist('connection-type')
         _dispLang = request.form.get('display-lang')
         _speechLang = request.form.get('speech-lang')
 
@@ -178,7 +193,7 @@ class Save_Mobile_CSV(Resource):
         _bodycolor = request.form.get('body-color')
         _timestamp = datetime.datetime.now()
         _currentMode = request.form.get('current-mode')
-        _connectionType = request.form.get('connection-type')
+        _connectionType = request.form.getlist('connection-type')
         _dispLang = request.form.get('display-lang')
         _speechLang = request.form.get('speech-lang')
 
@@ -214,14 +229,17 @@ class Save_Microwave_CSV(Resource):
         _bodyColor = request.form.get('body-color')
         _controlMethod = request.form.get('control-method')
 
-        _connectionType = request.form.get('connection-type')
+        _specialFeature = request.form.getlist('sp-feature')
+        _errorCodes = request.form.get('error-codes')
+
+        _connectionType = request.form.getlist('connection-type')
         _displayLanguage = request.form.get('display-lang')
         _speechLanguage = request.form.get('speech-lang')
 
         _timestamp = datetime.datetime.now()
 
         fieldnames = ['Power Rating', 'Type', 'Model', 'Capacity', 'Body Color', 'Control Method',
-                      'Connection Type', 'Display Language', 'Speech Language', 'Timestamp']
+                      'Special Features', 'Error Codes', 'Connection Type', 'Display Language', 'Speech Language', 'Timestamp']
 
         with open('microwave.csv', 'a') as inFile:
             writer = csv.DictWriter(inFile, fieldnames=fieldnames)
@@ -234,7 +252,8 @@ class Save_Microwave_CSV(Resource):
                     'Capacity': _capacity,
                     'Body Color': _bodyColor,
                     'Control Method': _controlMethod,
-
+                    'Special Features': _specialFeature,
+                    'Error Codes': _errorCodes,
                     'Connection Type': _connectionType,
                     'Display Language': _displayLanguage,
                     'Speech Language': _speechLanguage,
@@ -250,19 +269,46 @@ class Save_FamilyHub_CSV(Resource):
 
     def post(self):
 
-        # ==================================
-        # Pull the form data into here & push it into the CSV.
-        # ==================================
+        _powerRating = request.form.get('power')
+        _type = request.form.get('type')
+
+        _model = request.form.get('model')
+        _capacity = request.form.get('capacity')
+        _width = request.form.get('width')
+        _height = request.form.get('height')
+        _depth = request.form.get('depth')
+        _weight = request.form.get('weight')
+        _bodyColor = request.form.get('body-color')
+        
+        _specialFeature = request.form.getlist('sp-feature')
+        _errorCodes = request.form.get('error-codes')
+
+        _connectionType = request.form.getlist('connection-type')
+        _displayLanguage = request.form.get('display-lang')
+        _speechLanguage = request.form.get('speech-lang')
 
         _timestamp = datetime.datetime.now()
 
-        fieldnames = ['Timestamp']
+        fieldnames = ['Power Rating', 'Type', 'Model', 'Capacity', 'Width', 'Height', 'Depth', 'Weight', 'Body Color', 'Special Feature', 'Error Codes', 'Connection Type', 'Display Language', 'Speech Language', 'Timestamp']
 
         with open('family-hub.csv', 'a') as inFile:
             writer = csv.DictWriter(inFile, fieldnames=fieldnames)
             writer.writerow(
-                {
-                    'Timestamp': _timestamp
-                })
+                {'Power Rating': _powerRating,
+                 'Type': _type,
+                 'Model': _model,
+                 'Capacity': _capacity,
+                 'Width': _width,
+                 'Height': _height,
+                 'Depth': _depth,
+                 'Weight': _weight,
+                 'Body Color': _bodyColor,
+                 'Special Feature': _specialFeature,
+                 'Error Codes': _errorCodes,
+                 'Connection Type': _connectionType,
+                 'Display Language': _displayLanguage,
+                 'Speech Language': _speechLanguage,
+                 'Timestamp': _timestamp
+                 })
 
         return redirect(url_for('familyHub'))

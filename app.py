@@ -37,9 +37,9 @@ def airConditioner():
 def aiSpeaker():
     return render_template('AiSpeaker.html')
 
-# @app.route('/family-hub', methods=['GET'])
-# def familyHub():
-#     return render_template('FamilyHub.html')
+@app.route('/family-hub', methods=['GET'])
+def familyHub():
+    return render_template('FamilyHub.html')
 
 @app.route('/microwave', methods=['GET'])
 def microWave():
@@ -110,4 +110,5 @@ if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000)) # Application Runs on 5000 PORT
     http_server = WSGIServer(('0.0.0.0', port), app)
     print(f"Flask Server Started at {str(port)}")
+    print(f"http://localhost:{str(port)}")
     http_server.serve_forever()
