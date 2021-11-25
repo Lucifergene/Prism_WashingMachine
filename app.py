@@ -64,37 +64,59 @@ def permute():
 @app.route('/download-washing-machine', methods=['GET'])
 def download_washingmachine ():
     path = "washing-machine.csv"
-    return send_file(path, as_attachment=True)
+    try:
+        return send_file(path, as_attachment=True)
+    except FileNotFoundError:
+        return "<script>alert('You need to fill up the form once before downloading');</script>"
+    
 
 @app.route('/download-air-conditioner', methods=['GET'])
 def download_airconditioner ():
     path = "air-conditioner.csv"
-    return send_file(path, as_attachment=True)
+    try:
+        return send_file(path, as_attachment=True)
+    except FileNotFoundError:
+        return "<script>alert('You need to fill up the form once before downloading');</script>"
 
 @app.route('/download-ai-speaker', methods=['GET'])
 def download_aispeaker ():
     path = "ai-speaker.csv"
-    return send_file(path, as_attachment=True)
+    try:
+        return send_file(path, as_attachment=True)
+    except FileNotFoundError:
+        return "<script>alert('You need to fill up the form once before downloading');</script>"
 
 @app.route('/download-family-hub', methods=['GET'])
 def download_familyhub ():
     path = "family-hub.csv"
-    return send_file(path, as_attachment=True)
+    try:
+        return send_file(path, as_attachment=True)
+    except FileNotFoundError:
+        return "<script>alert('You need to fill up the form once before downloading');</script>"
 
 @app.route('/download-microwave', methods=['GET'])
 def download_microwave ():
     path = "microwave.csv"
-    return send_file(path, as_attachment=True)
+    try:
+        return send_file(path, as_attachment=True)
+    except FileNotFoundError:
+        return "<script>alert('You need to fill up the form once before downloading');</script>"
 
 @app.route('/download-mobile', methods=['GET'])
 def download_mobile ():
     path = "mobile.csv"
-    return send_file(path, as_attachment=True)
+    try:
+        return send_file(path, as_attachment=True)
+    except FileNotFoundError:
+        return "<script>alert('You need to fill up the form once before downloading');</script>"
 
 @app.route('/download-watch', methods=['GET'])
 def download_watch ():
     path = "watch.csv"
-    return send_file(path, as_attachment=True)
+    try:
+        return send_file(path, as_attachment=True)
+    except FileNotFoundError:
+        return "<script>alert('You need to fill up the form once before downloading');</script>"
 
 
 # === These routes download the respective CSV files of each item  === #
@@ -103,43 +125,64 @@ def download_watch ():
 def permute_washingmachine ():
     time.sleep(5)
     path = "./permute_output/OutputWashingMachine.csv"
-    return send_file(path, as_attachment=True)
+    try:
+        return send_file(path, as_attachment=True)
+    except FileNotFoundError:
+        return "<script>alert('You need to fill up the form once before permutating');</script>"
 
 @app.route('/permute-air-conditioner', methods=['GET'])
 def permute_airconditioner ():
     time.sleep(5)
     path = "./permute_output/OutputAC.csv"
-    return send_file(path, as_attachment=True)
+    try:
+        return send_file(path, as_attachment=True)
+    except FileNotFoundError:
+        return "<script>alert('You need to fill up the form once before permutating');</script>"
 
 @app.route('/permute-ai-speaker', methods=['GET'])
 def permute_aispeaker ():
     time.sleep(5)
     path = "./permute_output/OutputAISpeaker.csv"
-    return send_file(path, as_attachment=True)
+    try:
+        return send_file(path, as_attachment=True)
+    except FileNotFoundError:
+        return "<script>alert('You need to fill up the form once before permutating');</script>"
 
 @app.route('/permute-family-hub', methods=['GET'])
 def permute_familyhub ():
     time.sleep(5)
     path = "./permute_output/OutputFamilyHub.csv"
-    return send_file(path, as_attachment=True)
+    try:
+        return send_file(path, as_attachment=True)
+    except FileNotFoundError:
+        return "<script>alert('You need to fill up the form once before permutating');</script>"
 
 @app.route('/permute-microwave', methods=['GET'])
 def permute_microwave ():
     time.sleep(5)
     path = "./permute_output/OutputMicrowave.csv"
-    return send_file(path, as_attachment=True)
+    try:
+        return send_file(path, as_attachment=True)
+    except FileNotFoundError:
+        return "<script>alert('You need to fill up the form once before permutating');</script>"
 
 @app.route('/permute-mobile', methods=['GET'])
 def permute_mobile ():
     time.sleep(5)
     path = "./permute_output/OutputMobile.csv"
-    return send_file(path, as_attachment=True)
+    try:
+        return send_file(path, as_attachment=True)
+    except FileNotFoundError:
+        return "<script>alert('You need to fill up the form once before permutating');</script>"
 
 @app.route('/permute-watch', methods=['GET'])
 def permute_watch ():
     time.sleep(5)
     path = "./permute_output/OutputWatch.csv"
-    return send_file(path, as_attachment=True)
+    try:
+        return send_file(path, as_attachment=True)
+    except FileNotFoundError:
+        return "<script>alert('You need to fill up the form once before permutating');</script>"
 
 
 # === These Function Definitions are in the "writeCSV.py" file === #
