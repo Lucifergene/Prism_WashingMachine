@@ -1,0 +1,145 @@
+Current Mode,WifiConnected,Bluetooth Connected,Internet Availibility,Curret Speech Language
+Idle,YES,YES,YES,en-US
+Idle,YES,YES,YES,ko-KR
+Idle,YES,YES,YES,fr-FR
+Idle,YES,YES,NO,en-US
+Idle,YES,YES,NO,ko-KR
+Idle,YES,YES,NO,fr-FR
+Idle,YES,NO,YES,en-US
+Idle,YES,NO,YES,ko-KR
+Idle,YES,NO,YES,fr-FR
+Idle,YES,NO,NO,en-US
+Idle,YES,NO,NO,ko-KR
+Idle,YES,NO,NO,fr-FR
+Idle,NO,YES,YES,en-US
+Idle,NO,YES,YES,ko-KR
+Idle,NO,YES,YES,fr-FR
+Idle,NO,YES,NO,en-US
+Idle,NO,YES,NO,ko-KR
+Idle,NO,YES,NO,fr-FR
+Idle,NO,NO,YES,en-US
+Idle,NO,NO,YES,ko-KR
+Idle,NO,NO,YES,fr-FR
+Idle,NO,NO,NO,en-US
+Idle,NO,NO,NO,ko-KR
+Idle,NO,NO,NO,fr-FR
+Call,YES,YES,YES,en-US
+Call,YES,YES,YES,ko-KR
+Call,YES,YES,YES,fr-FR
+Call,YES,YES,NO,en-US
+Call,YES,YES,NO,ko-KR
+Call,YES,YES,NO,fr-FR
+Call,YES,NO,YES,en-US
+Call,YES,NO,YES,ko-KR
+Call,YES,NO,YES,fr-FR
+Call,YES,NO,NO,en-US
+Call,YES,NO,NO,ko-KR
+Call,YES,NO,NO,fr-FR
+Call,NO,YES,YES,en-US
+Call,NO,YES,YES,ko-KR
+Call,NO,YES,YES,fr-FR
+Call,NO,YES,NO,en-US
+Call,NO,YES,NO,ko-KR
+Call,NO,YES,NO,fr-FR
+Call,NO,NO,YES,en-US
+Call,NO,NO,YES,ko-KR
+Call,NO,NO,YES,fr-FR
+Call,NO,NO,NO,en-US
+Call,NO,NO,NO,ko-KR
+Call,NO,NO,NO,fr-FR
+Game,YES,YES,YES,en-US
+Game,YES,YES,YES,ko-KR
+Game,YES,YES,YES,fr-FR
+Game,YES,YES,NO,en-US
+Game,YES,YES,NO,ko-KR
+Game,YES,YES,NO,fr-FR
+Game,YES,NO,YES,en-US
+Game,YES,NO,YES,ko-KR
+Game,YES,NO,YES,fr-FR
+Game,YES,NO,NO,en-US
+Game,YES,NO,NO,ko-KR
+Game,YES,NO,NO,fr-FR
+Game,NO,YES,YES,en-US
+Game,NO,YES,YES,ko-KR
+Game,NO,YES,YES,fr-FR
+Game,NO,YES,NO,en-US
+Game,NO,YES,NO,ko-KR
+Game,NO,YES,NO,fr-FR
+Game,NO,NO,YES,en-US
+Game,NO,NO,YES,ko-KR
+Game,NO,NO,YES,fr-FR
+Game,NO,NO,NO,en-US
+Game,NO,NO,NO,ko-KR
+Game,NO,NO,NO,fr-FR
+Music,YES,YES,YES,en-US
+Music,YES,YES,YES,ko-KR
+Music,YES,YES,YES,fr-FR
+Music,YES,YES,NO,en-US
+Music,YES,YES,NO,ko-KR
+Music,YES,YES,NO,fr-FR
+Music,YES,NO,YES,en-US
+Music,YES,NO,YES,ko-KR
+Music,YES,NO,YES,fr-FR
+Music,YES,NO,NO,en-US
+Music,YES,NO,NO,ko-KR
+Music,YES,NO,NO,fr-FR
+Music,NO,YES,YES,en-US
+Music,NO,YES,YES,ko-KR
+Music,NO,YES,YES,fr-FR
+Music,NO,YES,NO,en-US
+Music,NO,YES,NO,ko-KR
+Music,NO,YES,NO,fr-FR
+Music,NO,NO,YES,en-US
+Music,NO,NO,YES,ko-KR
+Music,NO,NO,YES,fr-FR
+Music,NO,NO,NO,en-US
+Music,NO,NO,NO,ko-KR
+Music,NO,NO,NO,fr-FR
+Video,YES,YES,YES,en-US
+Video,YES,YES,YES,ko-KR
+Video,YES,YES,YES,fr-FR
+Video,YES,YES,NO,en-US
+Video,YES,YES,NO,ko-KR
+Video,YES,YES,NO,fr-FR
+Video,YES,NO,YES,en-US
+Video,YES,NO,YES,ko-KR
+Video,YES,NO,YES,fr-FR
+Video,YES,NO,NO,en-US
+Video,YES,NO,NO,ko-KR
+Video,YES,NO,NO,fr-FR
+Video,NO,YES,YES,en-US
+Video,NO,YES,YES,ko-KR
+Video,NO,YES,YES,fr-FR
+Video,NO,YES,NO,en-US
+Video,NO,YES,NO,ko-KR
+Video,NO,YES,NO,fr-FR
+Video,NO,NO,YES,en-US
+Video,NO,NO,YES,ko-KR
+Video,NO,NO,YES,fr-FR
+Video,NO,NO,NO,en-US
+Video,NO,NO,NO,ko-KR
+Video,NO,NO,NO,fr-FR
+Apps running,YES,YES,YES,en-US
+Apps running,YES,YES,YES,ko-KR
+Apps running,YES,YES,YES,fr-FR
+Apps running,YES,YES,NO,en-US
+Apps running,YES,YES,NO,ko-KR
+Apps running,YES,YES,NO,fr-FR
+Apps running,YES,NO,YES,en-US
+Apps running,YES,NO,YES,ko-KR
+Apps running,YES,NO,YES,fr-FR
+Apps running,YES,NO,NO,en-US
+Apps running,YES,NO,NO,ko-KR
+Apps running,YES,NO,NO,fr-FR
+Apps running,NO,YES,YES,en-US
+Apps running,NO,YES,YES,ko-KR
+Apps running,NO,YES,YES,fr-FR
+Apps running,NO,YES,NO,en-US
+Apps running,NO,YES,NO,ko-KR
+Apps running,NO,YES,NO,fr-FR
+Apps running,NO,NO,YES,en-US
+Apps running,NO,NO,YES,ko-KR
+Apps running,NO,NO,YES,fr-FR
+Apps running,NO,NO,NO,en-US
+Apps running,NO,NO,NO,ko-KR
+Apps running,NO,NO,NO,fr-FR

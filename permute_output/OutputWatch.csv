@@ -1,0 +1,289 @@
+Current Mode,WifiConnected,Bluetooth Connected,Internet Availibility,Current Display Language,Curret Speech Language
+Idle,YES,YES,YES,en-US,en-US
+Idle,YES,YES,YES,en-US,ko-KR
+Idle,YES,YES,YES,en-US,fr-FR
+Idle,YES,YES,YES,ko-KR,en-US
+Idle,YES,YES,YES,ko-KR,ko-KR
+Idle,YES,YES,YES,ko-KR,fr-FR
+Idle,YES,YES,YES,fr-FR,en-US
+Idle,YES,YES,YES,fr-FR,ko-KR
+Idle,YES,YES,YES,fr-FR,fr-FR
+Idle,YES,YES,NO,en-US,en-US
+Idle,YES,YES,NO,en-US,ko-KR
+Idle,YES,YES,NO,en-US,fr-FR
+Idle,YES,YES,NO,ko-KR,en-US
+Idle,YES,YES,NO,ko-KR,ko-KR
+Idle,YES,YES,NO,ko-KR,fr-FR
+Idle,YES,YES,NO,fr-FR,en-US
+Idle,YES,YES,NO,fr-FR,ko-KR
+Idle,YES,YES,NO,fr-FR,fr-FR
+Idle,YES,NO,YES,en-US,en-US
+Idle,YES,NO,YES,en-US,ko-KR
+Idle,YES,NO,YES,en-US,fr-FR
+Idle,YES,NO,YES,ko-KR,en-US
+Idle,YES,NO,YES,ko-KR,ko-KR
+Idle,YES,NO,YES,ko-KR,fr-FR
+Idle,YES,NO,YES,fr-FR,en-US
+Idle,YES,NO,YES,fr-FR,ko-KR
+Idle,YES,NO,YES,fr-FR,fr-FR
+Idle,YES,NO,NO,en-US,en-US
+Idle,YES,NO,NO,en-US,ko-KR
+Idle,YES,NO,NO,en-US,fr-FR
+Idle,YES,NO,NO,ko-KR,en-US
+Idle,YES,NO,NO,ko-KR,ko-KR
+Idle,YES,NO,NO,ko-KR,fr-FR
+Idle,YES,NO,NO,fr-FR,en-US
+Idle,YES,NO,NO,fr-FR,ko-KR
+Idle,YES,NO,NO,fr-FR,fr-FR
+Idle,NO,YES,YES,en-US,en-US
+Idle,NO,YES,YES,en-US,ko-KR
+Idle,NO,YES,YES,en-US,fr-FR
+Idle,NO,YES,YES,ko-KR,en-US
+Idle,NO,YES,YES,ko-KR,ko-KR
+Idle,NO,YES,YES,ko-KR,fr-FR
+Idle,NO,YES,YES,fr-FR,en-US
+Idle,NO,YES,YES,fr-FR,ko-KR
+Idle,NO,YES,YES,fr-FR,fr-FR
+Idle,NO,YES,NO,en-US,en-US
+Idle,NO,YES,NO,en-US,ko-KR
+Idle,NO,YES,NO,en-US,fr-FR
+Idle,NO,YES,NO,ko-KR,en-US
+Idle,NO,YES,NO,ko-KR,ko-KR
+Idle,NO,YES,NO,ko-KR,fr-FR
+Idle,NO,YES,NO,fr-FR,en-US
+Idle,NO,YES,NO,fr-FR,ko-KR
+Idle,NO,YES,NO,fr-FR,fr-FR
+Idle,NO,NO,YES,en-US,en-US
+Idle,NO,NO,YES,en-US,ko-KR
+Idle,NO,NO,YES,en-US,fr-FR
+Idle,NO,NO,YES,ko-KR,en-US
+Idle,NO,NO,YES,ko-KR,ko-KR
+Idle,NO,NO,YES,ko-KR,fr-FR
+Idle,NO,NO,YES,fr-FR,en-US
+Idle,NO,NO,YES,fr-FR,ko-KR
+Idle,NO,NO,YES,fr-FR,fr-FR
+Idle,NO,NO,NO,en-US,en-US
+Idle,NO,NO,NO,en-US,ko-KR
+Idle,NO,NO,NO,en-US,fr-FR
+Idle,NO,NO,NO,ko-KR,en-US
+Idle,NO,NO,NO,ko-KR,ko-KR
+Idle,NO,NO,NO,ko-KR,fr-FR
+Idle,NO,NO,NO,fr-FR,en-US
+Idle,NO,NO,NO,fr-FR,ko-KR
+Idle,NO,NO,NO,fr-FR,fr-FR
+Music,YES,YES,YES,en-US,en-US
+Music,YES,YES,YES,en-US,ko-KR
+Music,YES,YES,YES,en-US,fr-FR
+Music,YES,YES,YES,ko-KR,en-US
+Music,YES,YES,YES,ko-KR,ko-KR
+Music,YES,YES,YES,ko-KR,fr-FR
+Music,YES,YES,YES,fr-FR,en-US
+Music,YES,YES,YES,fr-FR,ko-KR
+Music,YES,YES,YES,fr-FR,fr-FR
+Music,YES,YES,NO,en-US,en-US
+Music,YES,YES,NO,en-US,ko-KR
+Music,YES,YES,NO,en-US,fr-FR
+Music,YES,YES,NO,ko-KR,en-US
+Music,YES,YES,NO,ko-KR,ko-KR
+Music,YES,YES,NO,ko-KR,fr-FR
+Music,YES,YES,NO,fr-FR,en-US
+Music,YES,YES,NO,fr-FR,ko-KR
+Music,YES,YES,NO,fr-FR,fr-FR
+Music,YES,NO,YES,en-US,en-US
+Music,YES,NO,YES,en-US,ko-KR
+Music,YES,NO,YES,en-US,fr-FR
+Music,YES,NO,YES,ko-KR,en-US
+Music,YES,NO,YES,ko-KR,ko-KR
+Music,YES,NO,YES,ko-KR,fr-FR
+Music,YES,NO,YES,fr-FR,en-US
+Music,YES,NO,YES,fr-FR,ko-KR
+Music,YES,NO,YES,fr-FR,fr-FR
+Music,YES,NO,NO,en-US,en-US
+Music,YES,NO,NO,en-US,ko-KR
+Music,YES,NO,NO,en-US,fr-FR
+Music,YES,NO,NO,ko-KR,en-US
+Music,YES,NO,NO,ko-KR,ko-KR
+Music,YES,NO,NO,ko-KR,fr-FR
+Music,YES,NO,NO,fr-FR,en-US
+Music,YES,NO,NO,fr-FR,ko-KR
+Music,YES,NO,NO,fr-FR,fr-FR
+Music,NO,YES,YES,en-US,en-US
+Music,NO,YES,YES,en-US,ko-KR
+Music,NO,YES,YES,en-US,fr-FR
+Music,NO,YES,YES,ko-KR,en-US
+Music,NO,YES,YES,ko-KR,ko-KR
+Music,NO,YES,YES,ko-KR,fr-FR
+Music,NO,YES,YES,fr-FR,en-US
+Music,NO,YES,YES,fr-FR,ko-KR
+Music,NO,YES,YES,fr-FR,fr-FR
+Music,NO,YES,NO,en-US,en-US
+Music,NO,YES,NO,en-US,ko-KR
+Music,NO,YES,NO,en-US,fr-FR
+Music,NO,YES,NO,ko-KR,en-US
+Music,NO,YES,NO,ko-KR,ko-KR
+Music,NO,YES,NO,ko-KR,fr-FR
+Music,NO,YES,NO,fr-FR,en-US
+Music,NO,YES,NO,fr-FR,ko-KR
+Music,NO,YES,NO,fr-FR,fr-FR
+Music,NO,NO,YES,en-US,en-US
+Music,NO,NO,YES,en-US,ko-KR
+Music,NO,NO,YES,en-US,fr-FR
+Music,NO,NO,YES,ko-KR,en-US
+Music,NO,NO,YES,ko-KR,ko-KR
+Music,NO,NO,YES,ko-KR,fr-FR
+Music,NO,NO,YES,fr-FR,en-US
+Music,NO,NO,YES,fr-FR,ko-KR
+Music,NO,NO,YES,fr-FR,fr-FR
+Music,NO,NO,NO,en-US,en-US
+Music,NO,NO,NO,en-US,ko-KR
+Music,NO,NO,NO,en-US,fr-FR
+Music,NO,NO,NO,ko-KR,en-US
+Music,NO,NO,NO,ko-KR,ko-KR
+Music,NO,NO,NO,ko-KR,fr-FR
+Music,NO,NO,NO,fr-FR,en-US
+Music,NO,NO,NO,fr-FR,ko-KR
+Music,NO,NO,NO,fr-FR,fr-FR
+Call,YES,YES,YES,en-US,en-US
+Call,YES,YES,YES,en-US,ko-KR
+Call,YES,YES,YES,en-US,fr-FR
+Call,YES,YES,YES,ko-KR,en-US
+Call,YES,YES,YES,ko-KR,ko-KR
+Call,YES,YES,YES,ko-KR,fr-FR
+Call,YES,YES,YES,fr-FR,en-US
+Call,YES,YES,YES,fr-FR,ko-KR
+Call,YES,YES,YES,fr-FR,fr-FR
+Call,YES,YES,NO,en-US,en-US
+Call,YES,YES,NO,en-US,ko-KR
+Call,YES,YES,NO,en-US,fr-FR
+Call,YES,YES,NO,ko-KR,en-US
+Call,YES,YES,NO,ko-KR,ko-KR
+Call,YES,YES,NO,ko-KR,fr-FR
+Call,YES,YES,NO,fr-FR,en-US
+Call,YES,YES,NO,fr-FR,ko-KR
+Call,YES,YES,NO,fr-FR,fr-FR
+Call,YES,NO,YES,en-US,en-US
+Call,YES,NO,YES,en-US,ko-KR
+Call,YES,NO,YES,en-US,fr-FR
+Call,YES,NO,YES,ko-KR,en-US
+Call,YES,NO,YES,ko-KR,ko-KR
+Call,YES,NO,YES,ko-KR,fr-FR
+Call,YES,NO,YES,fr-FR,en-US
+Call,YES,NO,YES,fr-FR,ko-KR
+Call,YES,NO,YES,fr-FR,fr-FR
+Call,YES,NO,NO,en-US,en-US
+Call,YES,NO,NO,en-US,ko-KR
+Call,YES,NO,NO,en-US,fr-FR
+Call,YES,NO,NO,ko-KR,en-US
+Call,YES,NO,NO,ko-KR,ko-KR
+Call,YES,NO,NO,ko-KR,fr-FR
+Call,YES,NO,NO,fr-FR,en-US
+Call,YES,NO,NO,fr-FR,ko-KR
+Call,YES,NO,NO,fr-FR,fr-FR
+Call,NO,YES,YES,en-US,en-US
+Call,NO,YES,YES,en-US,ko-KR
+Call,NO,YES,YES,en-US,fr-FR
+Call,NO,YES,YES,ko-KR,en-US
+Call,NO,YES,YES,ko-KR,ko-KR
+Call,NO,YES,YES,ko-KR,fr-FR
+Call,NO,YES,YES,fr-FR,en-US
+Call,NO,YES,YES,fr-FR,ko-KR
+Call,NO,YES,YES,fr-FR,fr-FR
+Call,NO,YES,NO,en-US,en-US
+Call,NO,YES,NO,en-US,ko-KR
+Call,NO,YES,NO,en-US,fr-FR
+Call,NO,YES,NO,ko-KR,en-US
+Call,NO,YES,NO,ko-KR,ko-KR
+Call,NO,YES,NO,ko-KR,fr-FR
+Call,NO,YES,NO,fr-FR,en-US
+Call,NO,YES,NO,fr-FR,ko-KR
+Call,NO,YES,NO,fr-FR,fr-FR
+Call,NO,NO,YES,en-US,en-US
+Call,NO,NO,YES,en-US,ko-KR
+Call,NO,NO,YES,en-US,fr-FR
+Call,NO,NO,YES,ko-KR,en-US
+Call,NO,NO,YES,ko-KR,ko-KR
+Call,NO,NO,YES,ko-KR,fr-FR
+Call,NO,NO,YES,fr-FR,en-US
+Call,NO,NO,YES,fr-FR,ko-KR
+Call,NO,NO,YES,fr-FR,fr-FR
+Call,NO,NO,NO,en-US,en-US
+Call,NO,NO,NO,en-US,ko-KR
+Call,NO,NO,NO,en-US,fr-FR
+Call,NO,NO,NO,ko-KR,en-US
+Call,NO,NO,NO,ko-KR,ko-KR
+Call,NO,NO,NO,ko-KR,fr-FR
+Call,NO,NO,NO,fr-FR,en-US
+Call,NO,NO,NO,fr-FR,ko-KR
+Call,NO,NO,NO,fr-FR,fr-FR
+App running,YES,YES,YES,en-US,en-US
+App running,YES,YES,YES,en-US,ko-KR
+App running,YES,YES,YES,en-US,fr-FR
+App running,YES,YES,YES,ko-KR,en-US
+App running,YES,YES,YES,ko-KR,ko-KR
+App running,YES,YES,YES,ko-KR,fr-FR
+App running,YES,YES,YES,fr-FR,en-US
+App running,YES,YES,YES,fr-FR,ko-KR
+App running,YES,YES,YES,fr-FR,fr-FR
+App running,YES,YES,NO,en-US,en-US
+App running,YES,YES,NO,en-US,ko-KR
+App running,YES,YES,NO,en-US,fr-FR
+App running,YES,YES,NO,ko-KR,en-US
+App running,YES,YES,NO,ko-KR,ko-KR
+App running,YES,YES,NO,ko-KR,fr-FR
+App running,YES,YES,NO,fr-FR,en-US
+App running,YES,YES,NO,fr-FR,ko-KR
+App running,YES,YES,NO,fr-FR,fr-FR
+App running,YES,NO,YES,en-US,en-US
+App running,YES,NO,YES,en-US,ko-KR
+App running,YES,NO,YES,en-US,fr-FR
+App running,YES,NO,YES,ko-KR,en-US
+App running,YES,NO,YES,ko-KR,ko-KR
+App running,YES,NO,YES,ko-KR,fr-FR
+App running,YES,NO,YES,fr-FR,en-US
+App running,YES,NO,YES,fr-FR,ko-KR
+App running,YES,NO,YES,fr-FR,fr-FR
+App running,YES,NO,NO,en-US,en-US
+App running,YES,NO,NO,en-US,ko-KR
+App running,YES,NO,NO,en-US,fr-FR
+App running,YES,NO,NO,ko-KR,en-US
+App running,YES,NO,NO,ko-KR,ko-KR
+App running,YES,NO,NO,ko-KR,fr-FR
+App running,YES,NO,NO,fr-FR,en-US
+App running,YES,NO,NO,fr-FR,ko-KR
+App running,YES,NO,NO,fr-FR,fr-FR
+App running,NO,YES,YES,en-US,en-US
+App running,NO,YES,YES,en-US,ko-KR
+App running,NO,YES,YES,en-US,fr-FR
+App running,NO,YES,YES,ko-KR,en-US
+App running,NO,YES,YES,ko-KR,ko-KR
+App running,NO,YES,YES,ko-KR,fr-FR
+App running,NO,YES,YES,fr-FR,en-US
+App running,NO,YES,YES,fr-FR,ko-KR
+App running,NO,YES,YES,fr-FR,fr-FR
+App running,NO,YES,NO,en-US,en-US
+App running,NO,YES,NO,en-US,ko-KR
+App running,NO,YES,NO,en-US,fr-FR
+App running,NO,YES,NO,ko-KR,en-US
+App running,NO,YES,NO,ko-KR,ko-KR
+App running,NO,YES,NO,ko-KR,fr-FR
+App running,NO,YES,NO,fr-FR,en-US
+App running,NO,YES,NO,fr-FR,ko-KR
+App running,NO,YES,NO,fr-FR,fr-FR
+App running,NO,NO,YES,en-US,en-US
+App running,NO,NO,YES,en-US,ko-KR
+App running,NO,NO,YES,en-US,fr-FR
+App running,NO,NO,YES,ko-KR,en-US
+App running,NO,NO,YES,ko-KR,ko-KR
+App running,NO,NO,YES,ko-KR,fr-FR
+App running,NO,NO,YES,fr-FR,en-US
+App running,NO,NO,YES,fr-FR,ko-KR
+App running,NO,NO,YES,fr-FR,fr-FR
+App running,NO,NO,NO,en-US,en-US
+App running,NO,NO,NO,en-US,ko-KR
+App running,NO,NO,NO,en-US,fr-FR
+App running,NO,NO,NO,ko-KR,en-US
+App running,NO,NO,NO,ko-KR,ko-KR
+App running,NO,NO,NO,ko-KR,fr-FR
+App running,NO,NO,NO,fr-FR,en-US
+App running,NO,NO,NO,fr-FR,ko-KR
+App running,NO,NO,NO,fr-FR,fr-FR

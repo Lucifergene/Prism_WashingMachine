@@ -16,11 +16,12 @@ body {
   background-attachment: fixed;
   background-size: 100%;
 }
-.nav-link {
-  font-family: acumin-pro, sans-serif;
-  margin-left: 30px;
-  font-size: 25px;
-  color: rgb(49, 253, 249) !important;
+.nav-link{
+  /* font-family: "Open Sans", sans-serif; */
+  /* margin-left: 30px; */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff !important;; 
 }
 /* form {
   padding-top: 180px;

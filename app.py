@@ -1,4 +1,4 @@
-import datetime, os, csv
+import datetime, os, csv, time
 
 from flask import Flask, redirect, url_for, request, render_template, redirect, send_file
 from flask_restful import Api, Resource
@@ -53,6 +53,10 @@ def mobile():
 def watch():
     return render_template('watch.html')
 
+@app.route('/permute', methods=['GET'])
+def permute():
+    return render_template('permute.html')
+
 
 
 # === These routes download the respective CSV files of each item  === #
@@ -73,23 +77,68 @@ def download_aispeaker ():
     return send_file(path, as_attachment=True)
 
 @app.route('/download-family-hub', methods=['GET'])
-def downloadFile_familyhub ():
+def download_familyhub ():
     path = "family-hub.csv"
     return send_file(path, as_attachment=True)
 
 @app.route('/download-microwave', methods=['GET'])
-def downloadFile_microwave ():
+def download_microwave ():
     path = "microwave.csv"
     return send_file(path, as_attachment=True)
 
 @app.route('/download-mobile', methods=['GET'])
-def downloadFile_mobile ():
+def download_mobile ():
     path = "mobile.csv"
     return send_file(path, as_attachment=True)
 
 @app.route('/download-watch', methods=['GET'])
-def downloadFile_watch ():
+def download_watch ():
     path = "watch.csv"
+    return send_file(path, as_attachment=True)
+
+
+# === These routes download the respective CSV files of each item  === #
+
+@app.route('/permute-washing-machine', methods=['GET'])
+def permute_washingmachine ():
+    time.sleep(5)
+    path = "./permute_output/OutputWashingMachine.csv"
+    return send_file(path, as_attachment=True)
+
+@app.route('/permute-air-conditioner', methods=['GET'])
+def permute_airconditioner ():
+    time.sleep(5)
+    path = "./permute_output/OutputAC.csv"
+    return send_file(path, as_attachment=True)
+
+@app.route('/permute-ai-speaker', methods=['GET'])
+def permute_aispeaker ():
+    time.sleep(5)
+    path = "./permute_output/OutputAISpeaker.csv"
+    return send_file(path, as_attachment=True)
+
+@app.route('/permute-family-hub', methods=['GET'])
+def permute_familyhub ():
+    time.sleep(5)
+    path = "./permute_output/OutputFamilyHub.csv"
+    return send_file(path, as_attachment=True)
+
+@app.route('/permute-microwave', methods=['GET'])
+def permute_microwave ():
+    time.sleep(5)
+    path = "./permute_output/OutputMicrowave.csv"
+    return send_file(path, as_attachment=True)
+
+@app.route('/permute-mobile', methods=['GET'])
+def permute_mobile ():
+    time.sleep(5)
+    path = "./permute_output/OutputMobile.csv"
+    return send_file(path, as_attachment=True)
+
+@app.route('/permute-watch', methods=['GET'])
+def permute_watch ():
+    time.sleep(5)
+    path = "./permute_output/OutputWatch.csv"
     return send_file(path, as_attachment=True)
 
 
@@ -102,9 +151,6 @@ api.add_resource(write.Save_FamilyHub_CSV, "/save-family-hub")
 api.add_resource(write.Save_Microwave_CSV, "/save-microwave")
 api.add_resource(write.Save_Mobile_CSV, "/save-mobile")
 api.add_resource(write.Save_Watch_CSV, "/save-watch")
-
-
-
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000)) # Application Runs on 5000 PORT
